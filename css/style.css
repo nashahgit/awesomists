@@ -23,7 +23,7 @@ html, body {
 	width: 100%;
 	position : absolute;
 	bottom: -62px;
-    z-index: 999;
+    z-index: 1;
 }
 
 #second {
@@ -232,6 +232,7 @@ h3 {
   transition-duration: 0.5s;
 }
 
+
 .carousel-inner>.item>img {
   width: 50%;
 }
@@ -249,10 +250,19 @@ h3 {
     height: 100%;
 }
 
-.carousel-caption>img {
+#mycarousel>.carousel-inner>.item>.carousel-caption {
+    right: 15%;
+    left: 15%;
+    padding-bottom: 0;
+}
+
+.carousel-caption>iframe {
+    width: 100%;
+    height: 65%;
     display: inline-block;
     vertical-align: middle;
     font: 16px/1 Arial sans-serif;
+    overflow:hidden;
 }
 
 
@@ -930,7 +940,6 @@ h3 {
   .half-page {
     width: 100vw;
   }    
-
 }
 
 /* Portrait */
@@ -940,6 +949,15 @@ h3 {
     width: 100vw;
   }
 
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 15%;
+      left: 15%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 85%;
+  }
 }
 
 /* Landscape */
@@ -947,6 +965,17 @@ h3 {
 
   .half-page {
     width: 50vw;
+  }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 5%;
+      left: 5%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
+      
   }
 
 }
@@ -959,6 +988,7 @@ h3 {
   .half-page {
     width: 100vw;
   } 
+
 }
 
 /* Portrait */
@@ -967,6 +997,16 @@ h3 {
   .half-page {
     width: 100vw;
   } 
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 15%;
+      left: 15%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 85%;
+  }
 }
 
 /* Landscape */
@@ -975,6 +1015,17 @@ h3 {
   .half-page {
     width: 50vw;
   }
+
+   #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
+  }
+
 }
 
 /* ----------- iPhone 6 ----------- */
@@ -995,6 +1046,16 @@ h3 {
     width: 100vw;
   } 
 
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 82%;
+  }
+
 }
 
 /* Landscape */
@@ -1003,6 +1064,17 @@ h3 {
   .half-page {
     width: 50vw;
   }
+
+   #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 70%;
+  }
+
 }
 
 /* ----------- iPhone 6+ ----------- */
@@ -1013,6 +1085,7 @@ h3 {
   .half-page {
     width: 100vw;
   } 
+
 }
 
 /* Portrait */
@@ -1021,6 +1094,16 @@ h3 {
   .half-page {
     width: 100vw;
   } 
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 82%;
+  }
 }
 
 /* Landscape */
@@ -1028,6 +1111,16 @@ h3 {
 
   .half-page {
     width: 50vw;
+  }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 70%;
   }
 }
 
@@ -1048,6 +1141,17 @@ h3 {
   .half-page {
     width: 100vw;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 70%;
+  }
+
 }
 
 /* Landscape */
@@ -1055,6 +1159,16 @@ h3 {
 
   .half-page {
     width: 50vw;
+  }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
   }
 }
 
@@ -1066,6 +1180,8 @@ h3 {
   .half-page {
     width: 100vw;
   }
+
+
 }
 
 /* Portrait */
@@ -1073,6 +1189,16 @@ h3 {
 
   .half-page {
     width: 100vw;
+  }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 70%;
   }
 }
 
@@ -1082,6 +1208,17 @@ h3 {
   .half-page {
     width: 50vw;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
+  }
+
 }
 
 /* ----------- Galaxy S5 ----------- */
@@ -1100,12 +1237,33 @@ h3 {
   .half-page {
     width: 100vw;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 85%;
+  }
+
 }
 
 /* Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   .half-page {
     width: 50vw;
+  }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
   }
 }
 
@@ -1125,6 +1283,16 @@ h3 {
   .half-page {
     width: 100vw;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 85%;
+  }
 }
 
 /* Landscape */
@@ -1133,6 +1301,17 @@ h3 {
   .half-page {
     width: 50vw;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 10%;
+      left: 10%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
+  }
+
 }
 
 /* ----------- iPad mini ----------- */
@@ -1146,6 +1325,9 @@ h3 {
   .col-sm-6 {
     width: 100%;
   }
+
+
+
 }
 
 /* Portrait */
@@ -1157,6 +1339,17 @@ h3 {
   .col-sm-6 {
     width: 100%;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 16%;
+      left: 16%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 88%;
+  }
+
 }
 
 /* Landscape */
@@ -1167,6 +1360,16 @@ h3 {
   }
   .col-sm-6 {
     width: 50%;
+  }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 8%;
+      left: 8%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
   }
 }
 
@@ -1191,6 +1394,17 @@ h3 {
   .col-sm-6 {
     width: 100%;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 16%;
+      left: 16%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 88%;
+  }
+
 }
 
 /* Landscape */
@@ -1202,6 +1416,17 @@ h3 {
   .col-sm-6 {
     width: 50%;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 8%;
+      left: 8%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
+  }
+
 }
 
 /* ----------- iPad 3 and 4 ----------- */
@@ -1213,6 +1438,8 @@ h3 {
   .col-sm-6 {
     width: 100%;
   }
+
+
 }
 
 /* Portrait */
@@ -1224,6 +1451,17 @@ h3 {
   .col-sm-6 {
     width: 100%;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 16%;
+      left: 16%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 88%;
+  }
+
 }
 
 /* Landscape */
@@ -1235,22 +1473,67 @@ h3 {
   .col-sm-6 {
     width: 50%;
   }
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 8%;
+      left: 8%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 65%;
+  }
+
 }
 
 /* ----------- Galaxy Tab 10.1 ----------- */
 
 /* Portrait and Landscape */
 @media (min-device-width: 800px) and (max-device-width: 1280px) {
-
+ 
 }
 
 /* Portrait */
 @media (max-device-width: 800px) and (orientation: portrait) { 
 
+/*  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 16%;
+      left: 16%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 80%;
+  }*/
 }
 
 /* Landscape */
 @media (max-device-width: 1280px) and (orientation: landscape) { 
+
+/*  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 8%;
+      left: 8%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 70%;
+  }*/
+}
+
+/* ----------- large DPI ---------------*/
+@media (min-device-width: 1920px) and (orientation: landscape) { 
+
+
+  #mycarousel>.carousel-inner>.item>.carousel-caption {
+      right: 8%;
+      left: 8%;
+  }
+
+  .carousel-caption>iframe {
+      width: 100%;
+      height: 90%;
+  }
 
 }
 
