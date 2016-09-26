@@ -4,21 +4,33 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/uikit.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/uikit.gradient.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/uikit.gradient.min.css"> -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/uikit.almost-flat.min.css" />
-        <link rel="stylesheet" href="css/components/sticky.almost-flat.min.css" />
-         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/bootstrap.offcanvas.min.css"/>
+        <!-- <link rel="stylesheet" href="css/uikit.almost-flat.min.css" /> -->
+        <!-- <link rel="stylesheet" href="css/components/sticky.almost-flat.min.css" /> -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!--script type="text/javascript" src="js/angular-1.0.0rc3.min.js"></script-->
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.offcanvas.min.js"></script>
+        <!-- // <script type="text/javascript" src="js/uikit.min.js"></script> -->
+        <!-- // <script type="text/javascript" src="js/components/sticky.min.js"></script> -->
+        <!--script type="text/javascript" src="js/jquery.parallaxify.min.js"></script-->
+        <!--script type="text/javascript" src="Snap.svg-0.4.1/dist/snap.svg-min.js"></script-->
+        <script type="text/javascript" src="js/script.js"></script>
+        <!--script type="text/javascript" src="js/awe-anim.js"></script-->
 
-    </head>
+       
+     </head>
     <body>
     	<div class="wrap">
 
-    		<div id="navBar">
+    	<!-- 	<div id="navBar">
     			<div class="uk-container uk-container-center">
     				<div class="uk-width-1-1" >
-	    				<nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached' , top : -40, animation : 'uk-animation-slide-top'}">
-	    					<a href="#" class="uk-navbar-brand uk-visible-large"><img class="logo" src="image/awesome.svg"></a>
+	    				<nav class="uk-navbar"  data-uk-sticky="{clsactive: 'uk-navbar-attached' , top : -40, animation : 'uk-animation-slide-top'}">
+	    					<a href="#" class="uk-navbar-brand uk-visible-large"><img class="logo" src="image/awe_1-2-white.svg"></a>
 	    					<ul class="uk-navbar-nav uk-navbar-flip uk-visible-large" data-uk-scrollspy-nav="{closest:'li', smoothscroll: true}">
 	    						<li><a href="#home">Home</a></li>
 	    						<li><a href="#second">Second</a></li>
@@ -26,14 +38,7 @@
 	    						
 	    					</ul>
                             <a href="#my-id" style="padding-right: 0px;padding-left: 0px;" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas>
-                                <!-- <div id="nav-icon">
-                                  <span></span>
-                                  <span></span>
-                                  <span></span>
-                                  <span></span>
-                                  <span></span>
-                                  <span></span>
-                                </div> -->
+                                
                                 <div id="hamburger" class="hamburglar is-closed">
                                     <div class="burger-icon">
                                       <div class="burger-container">
@@ -43,14 +48,12 @@
                                       </div>
                                     </div>
                                     
-                                    <!-- svg ring containter -->
                                     <div class="burger-ring">
                                       <svg class="svg-ring">
-                                          <!-- <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" /> -->
+                                          
                                           <path class="path" fill="none" stroke="#FFFFFF" stroke-width="4"  d="M278,166.49593544006348 C278,157.38215895384056 285.38215895384053,150 294.4959354400635,150 C303.6097119262864,150 310.99187088012695,157.38215895384056 310.99187088012695,166.49593544006348 C310.99187088012695,175.6097119262864 303.6097119262864,182.99187088012695 294.4959354400635,182.99187088012695 C285.38215895384053,182.99187088012695 278,175.6097119262864 278,166.49593544006348 z" />
                                       </svg>
                                     </div>
-                                    <!-- the masked path that animates the fill to the ring -->
                                     
                                         <svg width="0" height="0">
                                        <mask id="mask">
@@ -65,7 +68,7 @@
                                       
                                 </div>
                             </a>
-                            <a href="#" id="navbar-logo" class="uk-navbar-brand uk-navbar-center uk-hidden-large"><img class="logo" src="image/awesome.svg"></a>
+                            <a href="#" id="navbar-logo" class="uk-navbar-brand uk-navbar-center uk-hidden-large"><img class="logo" src="image/awe_1-2-white.svg"></a>
 	    				</nav>
 	   				    <div id="my-id" class="uk-offcanvas">
                             <div class="uk-offcanvas-bar">
@@ -78,46 +81,57 @@
 						</div>
 					</div>
     			</div>
-    		</div>
+    		</div> -->
+
+            <nav id="navbar-main" class="navbar navbar-inverse" >
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                    <img src="image/awe_1-2-white.svg">
+                  </a>
+                </div>
+                <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+                  <a class="nav-off-brand" href="#">
+                    <img src="image/awe_1-2.svg">
+                  </a>  
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#second">About</a></li>
+                    <li><a href="#third">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
 
             <!-- <div class="uk-grid-collapse"> -->
                 <div id="home">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-sm-6 pull-left" id="left-carousel">
+                            <div class="col-sm-6 pull-left" id="left-carousel" >
                                 <div id="mycarousel" class="carousel slide half-page" data-ride="carousel">
                                     <div class=" carousel-inner" role="listbox">
-                                    <!-- <div class="item ">
-                                        <img src="https://unsplash.it/2000/1250?image=397" data-color="firebrick"  alt="First Image">
-                                        <div class="carousel-caption">
-                                            <h3>First Image</h3>
-                                        </div>
-                                    </div> -->
-                                        <div class="item ">
-                                            <img class="bg-img" src="" data-color="lightblue" alt="Second Image">
+                                        <div id="first-image" class="item">
+                                            <img class="bg-img" src="image/working-city-views-blur-1.jpg" data-color="#0c5a74" alt="Second Image">
                                             <div class="carousel-caption">
-                                                <!-- <img src="image/mac-5.png" width="100%" height="100%"> -->
-                                                <iframe  src="mobile-phone.html" ></iframe>
-                                                <h3>Second Image</h3>
-                                            </div>
+                                               <img class="img-responsive" src="image/multiple-devices.svg" >
+                                            </div >
                                         </div>
-                                        <div class="item ">
-                                            <img class="bg-img" src="" data-color="cadetblue" alt="Third Image">
+                                        <!-- <div id="second-image" class="item ">
+                                            <img class="bg-img" src="image/hands-smartphone-blur-1.jpg" data-color="cadetblue" alt="Third Image">
                                             <div class="carousel-caption">
-                                                <iframe src="working-laptop.html"></iframe>
-                                                <h3>Third Image</h3>
+                                                <img class="img-responsive" src="image/mobile-icons.svg" >
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="item ">
-                                            <img src="https://unsplash.it/2000/1250?image=658" data-color="lightgreen" alt="Fourth Image">
+                                            <img class="bg-img" src="image/worktable-report-blur-1.jpg" data-color="#3c2a15"  alt="Fourth Image">
                                             <div class="carousel-caption">
-                                                <h3>Fourth Image</h3>
-                                            </div>
-                                        </div>
-                                        <div class="item ">
-                                            <img src="https://unsplash.it/2000/1250?image=638" data-color="tomato"  alt="Fifth Image">
-                                            <div class="carousel-caption">
-                                                <h3>Fifth Image</h3>
+                                                <img class="img-responsive" src="image/infographic-chart.svg" >
                                             </div>
                                         </div> -->
                                     </div>
@@ -126,39 +140,39 @@
 
                             <div class="col-sm-6 pull-right" id="right-carousel">
                                 <div id="mycarousel2" class="carousel slide half-page" data-ride="carousel">
-                                    <div class="right-carousel carousel-inner" role="listbox">
-                                    <!-- <div class="item ">
-                                        <img src="https://unsplash.it/2000/1250?image=397" data-color="firebrick"  alt="First Image">
-                                        <div class="carousel-caption">
-                                            <h3>First Image</h3>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item ">
+                                            <img class="bg-img" src="" width="80%" data-color="#561002" alt="Second Image">
+                                            <div class="carousel-caption">
+                                                <div class="panel panel-default myPanel">
+                                                    <div class="panel-body">
+                                                        CONTENT IS <br> FLEXIBLE LIQUID FLUID ELASTIC
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div> -->
-                                    <div class="item ">
-                                        <img class="bg-img" src="" width="80%" data-color="#8BC34A" alt="Second Image">
-                                        <div class="carousel-caption">
-                                            <h3>Second Image</h3>
-                                        </div>
+                                        <!-- <div class="item ">
+                                            <img class="bg-img" src="" data-color="#02406a" alt="Third Image">
+                                            <div class="carousel-caption">
+                                                <div class="panel panel-default myPanel">
+                                                    <div class="panel-body">
+                                                        CONTENT IS <br> FLEXIBLE LIQUID FLUID ELASTIC
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="item ">
+                                            <img class="bg-img" src="" data-color="#3c2a15" alt="Fourth Image">
+                                            <div class="carousel-caption">
+                                                <div class="panel panel-default myPanel">
+                                                    <div class="panel-body">
+                                                        CONTENT IS <br> FLEXIBLE LIQUID FLUID ELASTIC
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
                                     </div>
-                                    <div class="item ">
-                                        <img class="bg-img" src="" data-color="violet" alt="Third Image">
-                                        <div class="carousel-caption">
-                                            <h3>Third Image</h3>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="item ">
-                                        <img src="https://unsplash.it/2000/1250?image=658" data-color="lightgreen" alt="Fourth Image">
-                                        <div class="carousel-caption">
-                                            <h3>Fourth Image</h3>
-                                        </div>
-                                    </div>
-                                    <div class="item ">
-                                        <img src="https://unsplash.it/2000/1250?image=638" data-color="tomato"  alt="Fifth Image">
-                                        <div class="carousel-caption">
-                                            <h3>Fifth Image</h3>
-                                        </div>
-                                    </div> -->
-                                 </div>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -180,12 +194,7 @@
     	<footer class="uk-text-center uk-margin-large">
     		<a href="#" data-uk-smooth-scroll>Go Top</a>
     	</footer>
-        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/uikit.min.js"></script>
-        <script type="text/javascript" src="js/components/sticky.min.js"></script>
-        <!--script type="text/javascript" src="js/jquery.parallaxify.min.js"></script-->
-        <script type="text/javascript" src="js/script.js"></script>
+        
          
     </body>
 </html>

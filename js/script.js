@@ -23,6 +23,20 @@ $(document).ready(function(){
 		// },2000,"linear");
 	});
 
+	/* Navbar fix offset scroll spy */
+
+	var affixElement = '#navbar-main';
+
+	$(affixElement).affix({
+	  offset: {
+	    // Distance of between element and top page
+	    top: function () {
+	      return (this.top = $(window).height()-50)
+	      // return (this.top = $(affixElement).offset().top)
+	    },
+	  }
+	});
+
 	/* Carousel */
 	/* First carousel height settings*/
 	var $item1 = $('#mycarousel.carousel .item');
@@ -37,6 +51,7 @@ $(document).ready(function(){
 	$item1.eq(0).addClass('active');
 	$item1.height($wHeight1); 
 	$item1.addClass('full-screen');
+
 
 	/* Second carousel height settings*/ 
 	var $item2 = $('#mycarousel2.carousel .item'); 
@@ -98,29 +113,32 @@ $(document).ready(function(){
 
 	/* Hamburger Icon */
 
-	var trigger = $('#hamburger');
-    var isClosed = true;
-    var acTive = $("#my-id");
-    trigger.click(function () {
+	// var trigger = $('#hamburger');
+ //    var isClosed = true;
+ //    var acTive = $("#my-id");
+ //    trigger.click(function () {
     	
-    	// if (activE.hasClass('uk-active')) {
-    	// 	console.log('Its checked');
-    	// }
-      burgerTime();
-    });
+ //    	// if (activE.hasClass('uk-active')) {
+ //    	// 	console.log('Its checked');
+ //    	// }
+ //      burgerTime();
+ //    });
 
-    function burgerTime() {
-      if (acTive.hasClass('uk-active')) {
-      	$('div#my-id.uk-offcanvas.uk-active').click();
-        trigger.removeClass('is-open');
-        trigger.addClass('is-closed');
-        isClosed = false;
-      } else {
-      		console.log('Me in Else');
-        trigger.removeClass('is-closed');
-        trigger.addClass('is-open');
-        isClosed = true;
-      }
-    }
+ //    function burgerTime() {
+ //      if (acTive.hasClass('uk-active')) {
+ //      	$('div#my-id.uk-offcanvas.uk-active').click();
+ //        trigger.removeClass('is-open');
+ //        trigger.addClass('is-closed');
+ //        isClosed = false;
+ //      } else {
+ //      		console.log('Me in Else');
+ //        trigger.removeClass('is-closed');
+ //        trigger.addClass('is-open');
+ //        isClosed = true;
+ //      }
+ //    }
+
+    
 
 });
+

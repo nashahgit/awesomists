@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <script src="dist/snap.svg.js"></script>
+        <style type="text/css">
+            #paper {
+
+            }
+
+        </style>
+    </head>
+    <body>
+      <!--   <svg width="0" height="0">
+            <pattern id="pattern"
+                patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="0" viewbox="0 0 10 10">
+                <path d="M-5, 0, 10, 15M0-5,15,10" stroke="white" stroke-width="5"/>
+            </pattern>
+        </svg> -->
+
+        <script>
+            // var s = Snap();
+            // Snap.load("inkscape.svg", function (f) {
+            //     console.log(f.select('path[sodipodi:nodetypes="cc"]'));
+            // });
+
+        var s = Snap(1500, 1500);
+        // s.attr({ viewBox: "0 0 600 600" });
+        var bigCircle = s.circle(150, 150, 100);
+        bigCircle.attr({
+            fill: "#bada55", 
+            stroke: "#000", 
+            strokeWidth: 5 
+        });
+
+        var smallCircle = s.circle(100, 150, 70);
+        
+        var discs = s.group(smallCircle, s.circle(200, 150, 70));
+        discs.attr({
+            fill: "#fff"
+        });
+
+        bigCircle.attr({
+            mask : discs
+        })
+
+        smallCircle.animate({r: 50}, 1000,mina.elastic);
+
+        discs.select("circle:nth-child(2)").animate({r: 50}, 1000,mina.elastic);
+
+        var p = s.path("M10-5-10,15M15,0,0,15M0-5-20,15").attr({
+            fill : "none",
+            stroke: "#bada55",
+            strokeWidth: 5
+        });
+
+        p = p.pattern(0, 0, 10, 10);
+
+        bigCircle.attr({
+            fill : p
+        });
+
+        discs.attr({fill: "r()#fff-#000"});
+
+        discs.attr({fill: "R(150, 150, 100)#fff-#000"});
+
+        p.select("path").animate({stroke:"#f00"}, 1000);
+
+        Snap.load("mascot.svg", onSVGLoaded );
+
+        function onSVGLoaded( f ){ 
+            s.append( f );
+            f.select("polygon[fill='#09B39C']").attr({fill: "bada55"});
+
+            g = f.select("g");
+            // g.drag();
+            g.animate({
+                transform : 't100,0'
+            }, 1000, mina.elastic);
+        }
+
+        //  {
+        //     f.select("polygon[fill='#09B39C']").attr({fill : "#bada55"});
+        // });
+
+        </script>
+
+</body>
+</html>
