@@ -1,4 +1,5 @@
 ﻿@import 'https://fonts.googleapis.com/css?family=Poppins';
+@import 'https://fonts.googleapis.com/css?family=Russo+One';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -63,8 +64,21 @@ html, body {
     border-color: #075f9c;
 }
 
+.navbar-nav>li>a {
+    padding: 15px 0px;
+    font-size: 16px;
+}
+
+.navbar-nav>li {
+    margin-right: 10px;
+}
+
+.navbar-nav>li:last-of-type {
+    margin-right: 0px;
+}
+
 .navbar-nav > li.active > a:after {
-    height: 2px;
+    height: 5px;
 }
 
 
@@ -140,10 +154,61 @@ html, body {
     background-color: #075f9c;
 }
 
-#second {
-	width: 100vw;
-	height: 100vh;
-	background-color: white;
+#service {
+	background-color: #322a29;
+}
+
+.keep-margin {
+  margin-top: 50px;
+}
+
+.service-area .panel >.panel-body {
+  background-color: #322a29;
+  text-align: justify;
+  color: #fff;
+}
+
+.panel-default {
+    border-color: rgba(252, 251, 251, 0);
+}
+
+.service-area .panel{
+  background-color: rgba(255, 255, 255, 0);
+/*  border-color: #040404;
+  border-radius: 0px;*/
+  /*box-shadow: 0 1px 2px rgba(0,0,0,0.15);*/
+  -webkit-transition : all 0.3s ease-in-out;
+  transition : all 0.3s ease-in-out;
+  /*border: 0px solid transparent;*/
+}
+
+.service-area .panel:hover {
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(6,117,191,1);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(6,117,191,1);
+  box-shadow: 0px 0px 8px 2px rgba(6,117,191,1);
+}
+
+.section-headline {
+  padding: 15px;
+  padding-left: 20px;
+  font-size: 45px;
+  font-family: 'Russo One', sans-serif;
+  color: #0495f9;
+  text-align: center;
+}
+
+.service-area .panel >.panel-heading {
+  background-color: #322a29;
+  color: #fff;
+  text-align: center;
+  border-color: rgba(255, 255, 254, 0);
+  font-size: 18px;
+  border-radius: 0;
+}
+
+.service-area .panel>img {
+  margin: 0 auto;
+  width: 60px;
 }
 
 #third {
@@ -159,6 +224,10 @@ html, body {
     border: 1px solid rgba(0,0,0,.06);
     padding: 10px;
     text-transform: uppercase;
+}
+
+#slider-bg {
+    background: url("../image/carbon_fibre/carbon_fibre.png") repeat;
 }
 
 
@@ -419,14 +488,14 @@ html, body {
     overflow:hidden;
 }
 
-.panel-body {
+.myPanel>.panel-body {
     text-align: center;
     font-size: 2.5em;
     font-style: italic;
     font-weight: 100;
     color: #fff;
 }
-}
+
 
 /* Hamburger Icon */
 
@@ -1012,9 +1081,11 @@ html, body {
       width: 100%;
       height: 85%;
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
   }
+
+
 }
 
 /* Portrait */
@@ -1033,8 +1104,11 @@ html, body {
       width: 100%;
       height: 85%;
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1055,8 +1129,11 @@ html, body {
       height: 65%;
       
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1087,8 +1164,11 @@ html, body {
       width: 100%;
       /*height: 85%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1108,8 +1188,12 @@ html, body {
       width: 100%;
       /*height: 65%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+
+  .section-headline {
+    font-size: 35px;
   }
 
 }
@@ -1121,7 +1205,7 @@ html, body {
 
   .half-page {
     width: 100vw;
-  } 
+  }
 
 }
 
@@ -1141,8 +1225,11 @@ html, body {
       width: 100%;
       /*height: 82%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 
 }
@@ -1163,8 +1250,11 @@ html, body {
       width: 100%;
       /*height: 70%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 
 }
@@ -1196,8 +1286,11 @@ html, body {
       width: 100%;
       /*height: 82%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1.8em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1217,8 +1310,11 @@ html, body {
       width: 100%;
       /*height: 70%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1230,7 +1326,7 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
   }
 }
@@ -1251,10 +1347,12 @@ html, body {
       width: 100%;
       /*height: 70%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
   }
-
+  .section-headline {
+    font-size: 35px;
+  }
 }
 
 /* Landscape */
@@ -1273,8 +1371,11 @@ html, body {
       width: 100%;
       /*height: 65%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1306,8 +1407,11 @@ html, body {
       width: 100%;
       /*height: 70%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1329,6 +1433,9 @@ html, body {
   }
   .panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1358,8 +1465,11 @@ html, body {
       width: 100%;
       /*height: 85%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 
 }
@@ -1379,8 +1489,11 @@ html, body {
       width: 100%;
       /*height: 65%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1392,7 +1505,7 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
 
@@ -1405,7 +1518,7 @@ html, body {
       width: 100%;
       /*height: 88%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
   }
 }
@@ -1416,7 +1529,7 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
 
@@ -1429,8 +1542,11 @@ html, body {
       width: 100%;
       /*height: 88%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1445,7 +1561,7 @@ html, body {
       right: 10%;
       left: 10%;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
 
@@ -1453,8 +1569,11 @@ html, body {
       width: 100%;
       /*height: 65%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1466,10 +1585,10 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
   }
 
@@ -1481,7 +1600,7 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
 
@@ -1494,8 +1613,11 @@ html, body {
       width: 100%;
       /*height: 88%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 
 }
@@ -1506,7 +1628,7 @@ html, body {
   .half-page {
     width: 50vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 50%;
   }
 
@@ -1519,8 +1641,11 @@ html, body {
       width: 100%;
       /*height: 65%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1531,7 +1656,7 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
 
@@ -1543,7 +1668,7 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
 
@@ -1556,8 +1681,11 @@ html, body {
       width: 100%;
       /*height: 88%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 
 }
@@ -1568,7 +1696,7 @@ html, body {
   .half-page {
     width: 50vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 50%;
   }
 
@@ -1581,8 +1709,11 @@ html, body {
       width: 100%;
       /*height: 65%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 
 }
@@ -1593,12 +1724,15 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
 
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1608,7 +1742,7 @@ html, body {
   .half-page {
     width: 100vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 100%;
   }
 
@@ -1621,8 +1755,11 @@ html, body {
       width: 100%;
       /*height: 88%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 2.4em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 
 }
@@ -1633,7 +1770,7 @@ html, body {
   .half-page {
     width: 50vw;
   }
-  .col-sm-6 {
+  .myBanner>.col-sm-6 {
     width: 50%;
   }
 
@@ -1646,8 +1783,11 @@ html, body {
       width: 100%;
       /*height: 65%;*/
   }
-  .panel-body {
+  .myPanel>.panel-body {
      font-size: 1.4em;
+  }
+  .section-headline {
+    font-size: 35px;
   }
 }
 
@@ -1698,6 +1838,9 @@ html, body {
   .carousel-caption>img {
       width: 100%;
       /*height: 90%;*/
+  }
+  .section-headline {
+    font-size: 35px;
   }
 
 }

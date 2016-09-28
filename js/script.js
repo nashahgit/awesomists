@@ -23,6 +23,13 @@ $(document).ready(function(){
 		// },2000,"linear");
 	});
 
+	/* To set Navbar active */
+
+	$(".nav a").on("click", function(){
+	   $(".nav").find(".active").removeClass("active");
+	   $(this).parent().addClass("active");
+	});
+
 	/* Navbar fix offset scroll spy */
 
 	var affixElement = '#navbar-main';
@@ -108,7 +115,24 @@ $(document).ready(function(){
 
 	$('.carousel').carousel({
 	  interval: 6000,
-	  pause: "false"
+	  pause: null
+	});
+
+	/* Smooth scroll */
+
+	$(function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 800);
+	        return false;
+	      }
+	    }
+	  });
 	});
 
 	/* Hamburger Icon */
