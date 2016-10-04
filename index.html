@@ -16,6 +16,7 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap.offcanvas.min.js"></script>
         <script src="js/thumbnail-slider.js" type="text/javascript"></script>
+        <script src="js/scrollreveal.min.js" type="text/javascript"></script>
         <!-- // <script type="text/javascript" src="js/uikit.min.js"></script> -->
         <!-- // <script type="text/javascript" src="js/components/sticky.min.js"></script> -->
         <!--script type="text/javascript" src="js/jquery.parallaxify.min.js"></script-->
@@ -27,63 +28,6 @@
      </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
     	<div class="wrap">
-
-    	<!-- 	<div id="navBar">
-    			<div class="uk-container uk-container-center">
-    				<div class="uk-width-1-1" >
-	    				<nav class="uk-navbar"  data-uk-sticky="{clsactive: 'uk-navbar-attached' , top : -40, animation : 'uk-animation-slide-top'}">
-	    					<a href="#" class="uk-navbar-brand uk-visible-large"><img class="logo" src="image/awe_1-2-white.svg"></a>
-	    					<ul class="uk-navbar-nav uk-navbar-flip uk-visible-large" data-uk-scrollspy-nav="{closest:'li', smoothscroll: true}">
-	    						<li><a href="#home">Home</a></li>
-	    						<li><a href="#second">Second</a></li>
-	    						<li><a href="#third">Third</a></li>
-	    						
-	    					</ul>
-                            <a href="#my-id" style="padding-right: 0px;padding-left: 0px;" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas>
-                                
-                                <div id="hamburger" class="hamburglar is-closed">
-                                    <div class="burger-icon">
-                                      <div class="burger-container">
-                                        <span class="burger-bun-top"></span>
-                                        <span class="burger-filling"></span>
-                                        <span class="burger-bun-bot"></span>
-                                      </div>
-                                    </div>
-                                    
-                                    <div class="burger-ring">
-                                      <svg class="svg-ring">
-                                          
-                                          <path class="path" fill="none" stroke="#FFFFFF" stroke-width="4"  d="M278,166.49593544006348 C278,157.38215895384056 285.38215895384053,150 294.4959354400635,150 C303.6097119262864,150 310.99187088012695,157.38215895384056 310.99187088012695,166.49593544006348 C310.99187088012695,175.6097119262864 303.6097119262864,182.99187088012695 294.4959354400635,182.99187088012695 C285.38215895384053,182.99187088012695 278,175.6097119262864 278,166.49593544006348 z" />
-                                      </svg>
-                                    </div>
-                                    
-                                        <svg width="0" height="0">
-                                       <mask id="mask">
-                                    <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
-                                       </mask>
-                                     </svg>
-                                    <div class="path-burger">
-                                      <div class="animate-path">
-                                        <div class="path-rotation"></div>
-                                      </div>
-                                    </div>
-                                      
-                                </div>
-                            </a>
-                            <a href="#" id="navbar-logo" class="uk-navbar-brand uk-navbar-center uk-hidden-large"><img class="logo" src="image/awe_1-2-white.svg"></a>
-	    				</nav>
-	   				    <div id="my-id" class="uk-offcanvas">
-                            <div class="uk-offcanvas-bar">
-    	    					<ul class="uk-nav uk-nav-offcanvas">
-    	    						<li><a href="#home">Home</a></li>
-    	    						<li><a href="#second">Second</a></li>
-    	    						<li><a href="#third">Third</a></li>
-    	    				   </ul>
-                            </div>
-						</div>
-					</div>
-    			</div>
-    		</div> -->
 
             <nav id="navbar-main" class="navbar navbar-inverse" >
               <div class="container">
@@ -105,6 +49,7 @@
                   <ul class="nav navbar-nav">
                     <li class="active"><a href="#home">Home</a></li>
                     <li><a href="#service">Services</a></li>
+                    <li><a href="#motto">Vision</a></li>
                     <li><a href="#works">Works</a></li>
                   </ul>
                 </div>
@@ -185,7 +130,7 @@
                         <div class="section-headline">What we do</div>
                     </div>
                     <div class="row service-area">
-                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 one">
                             <div class="panel panel-default">
                                 <img class="img-responsive" src="image/ic_web_white_48px.svg">
                                 <div class="panel-heading">Web<br>Design</div>
@@ -194,7 +139,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 two">
                             <div class="panel panel-default">
                                 <img class="img-responsive" src="image/ic_code_white_48px.svg">
                                 <div class="panel-heading">Web<br>Development</div>
@@ -203,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 three">
                             <div class="panel panel-default">
                                 <img class="img-responsive" src="image/ic_phone_iphone_white_48px.svg">
                                 <div class="panel-heading">Mobiles<br>Apps</div>
@@ -212,7 +157,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 four">
                             <div class="panel panel-default">
                                 <img class="img-responsive" src="image/ic_color_lens_white_48px.svg">
                                 <div class="panel-heading">Creative<br>Design</div>
@@ -221,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 five">
                             <div class="panel panel-default">
                                 <img class="img-responsive" src="image/ic_devices_other_white_48px.svg">
                                 <div class="panel-heading">Technology<br>Consulting</div>
@@ -230,9 +175,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 six">
                             <div class="panel panel-default">
-                                <img class="img-responsive" src="image/ic_web_white_48px.svg">
+                                <img class="img-responsive" src="image/megaphone.svg">
                                 <div class="panel-heading">Web<br>Marketing</div>
                                 <div class="panel-body">
                                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
@@ -243,6 +188,32 @@
                 </div>
    			</div>
 
+            <div id="motto">
+                <div class="container-fluid">
+                    <div class="row keep-margin">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 vision">
+                            <div class="section-headline vision-head">The Idea behind</div>    
+                            <!-- <div > -->
+                                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    
+                                </div> -->
+                                <!-- <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12"> -->
+                            <p class="vision-bg">
+                                It's fast, It's furious, It's Creativity and Technology. We are a small group of people with significant expertise in both technology and creative design. We believe that technology blend with creative design can translate the ideas clearly and widely. The cleanest approach to design and translate your ideas will be a vital part our success. We believe that the quality is in details and attending to details can give the audience a bigger picture on the subject. We strive to do innovative things to tell the story differently and beautifully, which will make the audience gaze in awe and make them say awesome. We are Awesomists.
+                            </p>
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 freelan">
+                            <div class="section-headline">Freelancer?</div>
+                            <p class="freelan-bg">
+                                jhjshdf hsdafh jhsdf jhsadfh jkhsdafjhn kjhsdfkj hsakjdhfk jhasdf hasdhf jhweoriujnkfnvlkwnerrsdf nASRUDDIN SHAH AWESOME. aYDIN IS AWESOME, mEHWISH IS AWESOME. hAMMI IS AWESOME. jhjshdf hsdafh jhsdf jhsadfh jkhsdafjhn kjhsdfkj hsakjdhfk jhasdf hasdhf jhweoriujnkfnvlkwnerrsdf nASRUDDIN SHAH AWESOME. aYDIN IS AWESOME, mEHWISH IS AWESOME. hAMMI IS AWESOME. jhjshdf hsdafh jhsdf jhsadfh jkhsdafjhn kjhsdfkj hsakjdhfk jhasdf hasdhf jhweoriujnkfnvlkwnerrsdf nASRUDDIN SHAH AWESOME. 
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
             <div id="works">
                 <div id="slider-bg" class="container-fluid">
                     <div class="row keep-margin">
@@ -252,21 +223,27 @@
                                 <div class="inner">
                                     <ul>
                                         <li>
-                                            <a class="thumb" href="image/demo/6.jpg"></a>
+                                            <a class="thumb" href="image/smart-edit.jpg"></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="image/demo/7.jpg"></a>
+                                            <a class="thumb" href="image/mycar-logo-edit.jpg"></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="image/demo/2.jpg"></a>
+                                            <a class="thumb" href="image/prd-print-edit.jpg"></a>
                                         </li>
                                         <li>
-                                            <a class="thumb" href="image/demo/3.jpg"></a>
+                                            <a class="thumb" href="image/ecstasi-logo-edit.jpg"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="image/mycar-box-edit.jpg"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="image/graphic-design-edit.jpg"></a>
                                         </li>
                                         <li>
                                             <a class="thumb" href="image/demo/4.jpg"></a>
                                         </li>
-                                        <li>
+                                      <!--   <li>
                                             <a class="thumb" href="image/demo/5.jpg"></a>
                                         </li>
                                         <li>
@@ -280,10 +257,14 @@
                                         </li>
                                         <li>
                                             <a class="thumb" href="image/demo/11.jpg"></a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                         </div>
                     </div>
                 </div>

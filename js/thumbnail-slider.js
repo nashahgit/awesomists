@@ -19,7 +19,7 @@ function checkViewport() {
     }
     else if(width > 1024)
     {
-        setWidth = "30%"
+        setWidth = "35%"
     }
 }
 

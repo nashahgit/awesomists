@@ -135,34 +135,25 @@ $(document).ready(function(){
 	  });
 	});
 
-	/* Hamburger Icon */
+	window.sr = ScrollReveal({duration: 500, opacity: 0, reset: false});
+	sr.reveal('.one', {origin: 'bottom',distance: '20px', delay:500});
+	sr.reveal('.two', {origin: 'bottom',distance: '20px', delay: 600});
+	sr.reveal('.three', {origin: 'bottom',distance: '20px', delay: 700});
+	sr.reveal('.four', {origin: 'bottom',distance: '20px', delay: 800});
+	sr.reveal('.five', {origin: 'bottom',distance: '20px', delay: 900});
+	sr.reveal('.six', {origin: 'bottom',distance: '20px', delay: 1000});
+	sr.reveal('.vision-head', {origin: 'top', distance: '20px', delay:400})
+	sr.reveal('.vision-bg', {origin: 'bottom', distance: '50px', delay: 500});
 
-	// var trigger = $('#hamburger');
- //    var isClosed = true;
- //    var acTive = $("#my-id");
- //    trigger.click(function () {
-    	
- //    	// if (activE.hasClass('uk-active')) {
- //    	// 	console.log('Its checked');
- //    	// }
- //      burgerTime();
- //    });
-
- //    function burgerTime() {
- //      if (acTive.hasClass('uk-active')) {
- //      	$('div#my-id.uk-offcanvas.uk-active').click();
- //        trigger.removeClass('is-open');
- //        trigger.addClass('is-closed');
- //        isClosed = false;
- //      } else {
- //      		console.log('Me in Else');
- //        trigger.removeClass('is-closed');
- //        trigger.addClass('is-open');
- //        isClosed = true;
- //      }
- //    }
-
-    
+	
+	// var $visionHeight = $('.vision-bg').height();
+	// var $freelanHeight = $('.freelan-bg').height();
+	// if($visionHeight > $freelanHeight) {
+	// 	$('.freelan-bg').height($visionHeight);
+	// }
+	// else {
+	// 	$('.vision-bg').height($freelanHeight);
+	// }
 
 });
 
