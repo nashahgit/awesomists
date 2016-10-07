@@ -1,12 +1,13 @@
 ﻿@import 'https://fonts.googleapis.com/css?family=Poppins';
 @import 'https://fonts.googleapis.com/css?family=Russo+One';
 @import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css?family=Roboto:100';
 
 * {
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
@@ -163,6 +164,10 @@ html, body {
   margin-top: 50px;
 }
 
+.keep-margin-30 {
+  margin-top: 30px;
+}
+
 .service-area .panel >.panel-body {
   background-color: #322a29;
   text-align: justify;
@@ -244,19 +249,107 @@ html, body {
   color: #fff;
   background-color: #075f9c;
 }
-.freelan-bg {
-  font-size: 16px;
-  text-align: justify;
-  color: #fff;
-  padding: 25px;
-  background-color: #A92F41;
-}
-.freelan {
-  padding: 0;
+
+#freelancer {
+  background-image: url('../image/bg-test-01.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-color: #000000;
 }
 .freelan .section-headline {
-  color: #A92F41;
-  background-color: #fff;
+  color: #ffffff;
+}
+.freelan p {
+  color: rgba(255, 255, 255, 0.5);
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+#freelanContact .modal-content {
+  background-color: #262121;
+  border-radius: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+#freelanContact .modal-header {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  border-bottom: 0px solid #e5e5e5;
+}
+#freelanContact .modal-body {
+
+}
+#freelanContact .modal-footer {
+  border-top: 0px solid #e5e5e5;
+  text-align: center;
+}
+button.close {
+  color: #ffffff;
+  text-shadow: 0 0px 0 #fff; 
+  opacity: 1;
+}
+#freelanForm .form-control {
+  background-color: #262121;
+  background-image: none;
+  border: 1px solid #2e6da4;
+  border-radius: 0px; 
+  color: #ffffff;
+}
+label.btn {
+    border-radius: 0px;
+    background-color: rgba(250, 235, 215, 0);
+    color: #ffffff;
+    border-color: #2e6da4;
+    font-family: 'Raleway', sans-serif;
+}
+label.btn:hover {
+    background-color: #2e6da4;
+    border-color: #2e6da4;
+    color: #ffffff;
+}
+#msgprocess, #msgSubmit, #msgFail {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/***** SVG bulb *****/
+.svg-bulb-wrap {
+    height: 300px;
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+.svg-bulb-wrap:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+#svg-bulb {
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
+}
+
+#freelan-contact {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-lg {
+  border-radius: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgba(240, 255, 255, 0);
+    border-color: #2e6da4;
+    border-radius: 0px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #third {
@@ -265,8 +358,109 @@ html, body {
 	background-color: gray;
 }
 
+.open-new {
+  z-index:1;
+  width:5%;";
+}
+
 #slider-bg {
     background: url("../image/carbon_fibre/carbon_fibre.png") repeat;
+}
+
+.more-work-button {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(460px, -100px) rotate(180deg);
+  -ms-transform: translate(460px, -100px) rotate(180deg);
+  transform: translate(460px, -100px) rotate(180deg);
+  -webkit-transition: all 0.2s 0.4s ease-in-out;
+  transition: all 0.2s 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 
@@ -447,8 +641,23 @@ html, body {
 #mycarousel>.carousel-inner>.item>.carousel-caption {
     right: 15%;
     left: 15%;
+    bottom: 20px;
     padding-bottom: 0;
+    -webkit-animation: fadein 1s;
+    animation: fadein 1s;
 }
+
+
+  @-webkit-keyframes fadein {
+    from { bottom:  90px; opacity: 0;}
+    to   { bottom: 20px; opacity: 1; }
+  }
+
+  @keyframes fadein {
+    from { bottom:  90px; opacity: 0;}
+    to   { bottom: 20px; opacity: 1; }
+  }
+
 
 #mycarousel .carousel-caption>img {
     width: 100%;
@@ -570,6 +779,13 @@ html, body {
   .vision-bg{
     font-size: 20px;
   }
+  .svg-bulb-wrap {
+    height: 150px;
+  }
+  #svg-bulb {
+      width:80%;
+  }
+
 }
 
 /* Landscape */
@@ -641,6 +857,15 @@ html, body {
   }
   .vision-bg{
     font-size: 20px;
+  }
+  .freelan p {
+    font-size: 20px;
+  }
+  .svg-bulb-wrap {
+    height: 150px;
+  }
+  #svg-bulb {
+      width:80%;
   }
 }
 
@@ -715,7 +940,12 @@ html, body {
   .vision-bg{
     font-size: 20px;
   }
-
+   .svg-bulb-wrap {
+    height: 150px;
+  }
+  #svg-bulb {
+      width:80%;
+  }
 }
 
 /* Landscape */
@@ -787,6 +1017,12 @@ html, body {
   }
   .vision-bg{
     font-size: 20px;
+  }
+   .svg-bulb-wrap {
+    height: 150px;
+  }
+  #svg-bulb {
+      width:80%;
   }
 }
 
@@ -861,6 +1097,12 @@ html, body {
   .vision-bg{
     font-size: 20px;
   }
+   .svg-bulb-wrap {
+    height: 150px;
+  }
+  #svg-bulb {
+      width:80%;
+  }
 }
 
 /* Landscape */
@@ -933,6 +1175,12 @@ html, body {
   .vision-bg{
     font-size: 20px;
   }
+   .svg-bulb-wrap {
+    height: 150px;
+  }
+  #svg-bulb {
+      width:80%;
+  }
 }
 
 /* Landscape */
@@ -1002,6 +1250,12 @@ html, body {
   }
   .vision-bg{
     font-size: 20px;
+  }
+   .svg-bulb-wrap {
+    height: 150px;
+  }
+  #svg-bulb {
+      width:80%;
   }
 
 }
@@ -1093,6 +1347,12 @@ html, body {
   .vision-bg{
     font-size: 20px;
   }
+   .svg-bulb-wrap {
+    height: 150px;
+  }
+  #svg-bulb {
+      width:80%;
+  }
 }
 
 /* Landscape */
@@ -1175,6 +1435,12 @@ html, body {
   .vision-bg{
     font-size: 24px;
   }
+   .svg-bulb-wrap {
+    height: 280px;
+  }
+  #svg-bulb {
+      width:80%;
+  }
 }
 
 /* Landscape */
@@ -1254,7 +1520,12 @@ html, body {
   .vision-bg{
     font-size: 24px;
   }
-
+   .svg-bulb-wrap {
+    height: 280px;
+  }
+  #svg-bulb {
+      width:80%;
+  }
 }
 
 /* Landscape */
@@ -1339,6 +1610,12 @@ html, body {
   }
   .vision-bg{
     font-size: 24px;
+  }
+  .svg-bulb-wrap {
+    height: 280px;
+  }
+  #svg-bulb {
+      width:80%;
   }
 }
 
@@ -1436,6 +1713,15 @@ html, body {
 }
 
 /* ----------- Asus Nexus 7 ----------- */
+
+@media screen and (device-width: 600px) and (device-height: 960px) and (orientation: portrait) {
+  .svg-bulb-wrap {
+    height: 280px;
+  }
+  #svg-bulb {
+      width:80%;
+  }
+}
 
 /* Portrait and Landscape */
 @media screen and (device-width: 601px) and (device-height: 906px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) {
