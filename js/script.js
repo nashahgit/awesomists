@@ -119,7 +119,6 @@ $(document).ready(function(){
 	});
 
 	/* Smooth scroll */
-
 	$(function() {
 	  $('a[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -135,17 +134,32 @@ $(document).ready(function(){
 	  });
 	});
 
-	window.sr = ScrollReveal({duration: 500, opacity: 0, reset: false});
-	sr.reveal('.one', {origin: 'bottom',distance: '20px', delay:500});
-	sr.reveal('.two', {origin: 'bottom',distance: '20px', delay: 600});
-	sr.reveal('.three', {origin: 'bottom',distance: '20px', delay: 700});
-	sr.reveal('.four', {origin: 'bottom',distance: '20px', delay: 800});
-	sr.reveal('.five', {origin: 'bottom',distance: '20px', delay: 900});
-	sr.reveal('.six', {origin: 'bottom',distance: '20px', delay: 1000});
-	sr.reveal('.vision-head', {origin: 'top', distance: '20px', delay:400})
-	sr.reveal('.vision-bg', {origin: 'bottom', distance: '50px', delay: 500});
+	/** Scroll reveal animation **/
+	window.sr = ScrollReveal({duration: 300, opacity: 0, reset: false});
+	sr.reveal('.one', {origin: 'bottom',distance: '20px', delay:400});
+	sr.reveal('.two', {origin: 'bottom',distance: '20px', delay: 500});
+	sr.reveal('.three', {origin: 'bottom',distance: '20px', delay: 600});
+	sr.reveal('.four', {origin: 'bottom',distance: '20px', delay: 700});
+	sr.reveal('.five', {origin: 'bottom',distance: '20px', delay: 800});
+	sr.reveal('.six', {origin: 'bottom',distance: '20px', delay: 900});
+	sr.reveal('.vision-head', {origin: 'top', distance: '20px', delay:300})
+	sr.reveal('.vision-bg', {origin: 'bottom', distance: '50px', delay: 400});
 
 	
+
+	/****** Contact quote ********/
+
+	$('.quoteClose').click(function() {
+		$('.foot-quote').addClass('slide-down', 1000, 'easeOutBounce');
+        $('.foot-quote').removeClass('slide-up'); 
+	});
+
+	$('#quoteOpen').click(function() {
+		$('.foot-quote').removeClass('slide-down');
+        $('.foot-quote').addClass('slide-up', 1000, 'easeOutBounce'); 
+	});
+
+	//});
 	// var $visionHeight = $('.vision-bg').height();
 	// var $freelanHeight = $('.freelan-bg').height();
 	// if($visionHeight > $freelanHeight) {

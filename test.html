@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
         body {
-            background: url(image/md.png), no-repeat, center;
+            /*background: url(image/md.png), no-repeat, center;*/
         }
         .st0{fill:#0EA9D8;}
         .portrait {
@@ -170,209 +170,209 @@
     <script src="Snap.svg-0.4.1/dist/snap.svg-min.js"></script>
     <script type="text/javascript">
 
-    var SCROLL_THROTTLE = 32;
-    var NUM_LINES = 5;
+  //   var SCROLL_THROTTLE = 32;
+  //   var NUM_LINES = 5;
 
-      function throttle(fn, time) {
-        var timer;
+  //     function throttle(fn, time) {
+  //       var timer;
 
-        return function() {
-          if (timer) {
-            return;
-          }
+  //       return function() {
+  //         if (timer) {
+  //           return;
+  //         }
 
-          fn.apply(this, arguments);
+  //         fn.apply(this, arguments);
 
-          timer = setTimeout(function() {
-            clearTimeout(timer);
-            timer = undefined;
-          }, time);
-        };
-      }
+  //         timer = setTimeout(function() {
+  //           clearTimeout(timer);
+  //           timer = undefined;
+  //         }, time);
+  //       };
+  //     }
 
-      function setTransform(element, transform) {
-        element.style['-webkit-transform'] = transform;
-        element.style['-ms-transform'] = transform;
-        element.style['transform'] = transform;
-      }
+  //     function setTransform(element, transform) {
+  //       element.style['-webkit-transform'] = transform;
+  //       element.style['-ms-transform'] = transform;
+  //       element.style['transform'] = transform;
+  //     }
 
 
-      // blinds
-      var lines = document.querySelector('.lines');
-      var allLines = [];
-      for (var i = 0; i < NUM_LINES; i++) {
-        var line = document.createElement('div');
-        line.setAttribute('class', 'line');
-        lines.appendChild(line);
-        line.style.width = (5 + (Math.random() * 10)) + 'px';
-        line.style.left = (-25 + (Math.random() * 150)) + '%';
-        setTransform(line, 'rotate(45deg) scaleX(0)');
-        allLines.push(line);
-      }
+  //     // blinds
+  //     var lines = document.querySelector('.lines');
+  //     var allLines = [];
+  //     for (var i = 0; i < NUM_LINES; i++) {
+  //       var line = document.createElement('div');
+  //       line.setAttribute('class', 'line');
+  //       lines.appendChild(line);
+  //       line.style.width = (5 + (Math.random() * 10)) + 'px';
+  //       line.style.left = (-25 + (Math.random() * 150)) + '%';
+  //       setTransform(line, 'rotate(45deg) scaleX(0)');
+  //       allLines.push(line);
+  //     }
 
-    var onScroll = throttle(function() {
-    var scrollTop = window.scrollY;
-    var per = 0;
-    var atTop = true;
+  //   var onScroll = throttle(function() {
+  //   var scrollTop = window.scrollY;
+  //   var per = 0;
+  //   var atTop = true;
 
-    if (scrollTop < topOffset) {
-      per = 1 - (scrollTop / topOffset) + .1;
-    } else if (scrollTop + windowHeight > projectsTop) {
-      per = (scrollTop + windowHeight - projectsTop) / (pageHeight - projectsTop) - .3;
-    }
+  //   if (scrollTop < topOffset) {
+  //     per = 1 - (scrollTop / topOffset) + .1;
+  //   } else if (scrollTop + windowHeight > projectsTop) {
+  //     per = (scrollTop + windowHeight - projectsTop) / (pageHeight - projectsTop) - .3;
+  //   }
 
-    // handle at top
-    if (scrollTop > macawTop) {
-      atTop = false;
-    }
-    portrait.classList.toggle('no-bg', !atTop);
+  //   // handle at top
+  //   if (scrollTop > macawTop) {
+  //     atTop = false;
+  //   }
+  //   portrait.classList.toggle('no-bg', !atTop);
 
-    var detailsHidden = details.classList.contains('hidden');
-    if (!atTop && !detailsHidden) {
-      details.classList.add('hidden');
-    } else if (atTop && detailsHidden) {
-      details.classList.remove('hidden');
-    }
+  //   var detailsHidden = details.classList.contains('hidden');
+  //   if (!atTop && !detailsHidden) {
+  //     details.classList.add('hidden');
+  //   } else if (atTop && detailsHidden) {
+  //     details.classList.remove('hidden');
+  //   }
 
-    per = Math.min(per, 1);
-    per = Math.max(per, 0);
+  //   per = Math.min(per, 1);
+  //   per = Math.max(per, 0);
 
-    // portrait props
-    portrait.style.opacity = atTop ? per : 1;
-    var portraitScale = 1 + (per * .05);
-    // cool but too much of a perf hit
-    // setTransform(portrait, atTop ? 'scale3d(' + portraitScale + ', ' + portraitScale + ', ' + portraitScale + ')' : 'none');
+  //   // portrait props
+  //   portrait.style.opacity = atTop ? per : 1;
+  //   var portraitScale = 1 + (per * .05);
+  //   // cool but too much of a perf hit
+  //   // setTransform(portrait, atTop ? 'scale3d(' + portraitScale + ', ' + portraitScale + ', ' + portraitScale + ')' : 'none');
 
-    // lines
-    var scale = 20 - (per * 20);
-    for (var i = 0; i < allLines.length; i++) {
-      var line = allLines[i];
-      var x = 0;
-      setTransform(line, 'rotate(45deg) scaleX(' + scale + ')');
-    }
-  }, SCROLL_THROTTLE);
+  //   // lines
+  //   var scale = 20 - (per * 20);
+  //   for (var i = 0; i < allLines.length; i++) {
+  //     var line = allLines[i];
+  //     var x = 0;
+  //     setTransform(line, 'rotate(45deg) scaleX(' + scale + ')');
+  //   }
+  // }, SCROLL_THROTTLE);
 
-        // var s = Snap("#canvas");
+        var s = Snap("#canvas");
 
-        // var a = s.select("#a");
-        // var w = s.select("#w");
-        // var e = s.select("#e");
-        // var s1 = s.select("#s1");
-        // var o = s.select("#o");
-        // var m = s.select("#m");
-        // var i = s.select("#i");
-        // var s2 = s.select("#s2");
-        // var t = s.select("#t");
-        // var s3 = s.select("#s3");
-        // var eye = s.select("#eye");
+        var a = s.select("#a");
+        var w = s.select("#w");
+        var e = s.select("#e");
+        var s1 = s.select("#s1");
+        var o = s.select("#o");
+        var m = s.select("#m");
+        var i = s.select("#i");
+        var s2 = s.select("#s2");
+        var t = s.select("#t");
+        var s3 = s.select("#s3");
+        var eye = s.select("#eye");
 
-        // function awesome_anim() {
-            // a.attr({opacity : 0,  transform: "s0,0"});
-            // w.attr({opacity : 0,  transform: "s0,0"});
-            // e.attr({fill: '#0EA9D8',opacity : 0,  transform: "s0,0"});
-            // s1.attr({opacity : 0,  transform: "s0,0"});
-            // o.attr({opacity : 0,  transform: "s0,0"});
-            // m.attr({opacity : 0,  transform: "s0,0"});
-            // i.attr({opacity : 0,  transform: "s0,0"});
-            // s2.attr({opacity : 0,  transform: "s0,0"});
-            // t.attr({opacity : 0,  transform: "s0,0"});
-            // s3.attr({opacity : 0,  transform: "s0,0"});
-            // // eye.attr({opacity : 0, transform: "r-25"});
+        function awesome_anim() {
+            a.attr({opacity : 0,  transform: "s0,0"});
+            w.attr({opacity : 0,  transform: "s0,0"});
+            e.attr({fill: '#0EA9D8',opacity : 0,  transform: "s0,0"});
+            s1.attr({opacity : 0,  transform: "s0,0"});
+            o.attr({opacity : 0,  transform: "s0,0"});
+            m.attr({opacity : 0,  transform: "s0,0"});
+            i.attr({opacity : 0,  transform: "s0,0"});
+            s2.attr({opacity : 0,  transform: "s0,0"});
+            t.attr({opacity : 0,  transform: "s0,0"});
+            s3.attr({opacity : 0,  transform: "s0,0"});
+            // eye.attr({opacity : 0, transform: "r-25"});
 
-            // var states = [{ fill: '#ea541e', transform: "r-25" }];
+            var states = [{ fill: '#ea541e', transform: "r-25" }];
 
              // fill: '#ea541e' ,
              //        transform: "r-25"
 
-            // a.animate({
-            //     opacity : 1,    
-            //     transform: "s1,1"
-            // },500, mina.bounce);
+            a.animate({
+                opacity : 1,    
+                transform: "s1,1"
+            },500, mina.bounce);
 
-            // setTimeout(function() {
-            //     w.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 300);
+            setTimeout(function() {
+                w.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 300);
 
-            // setTimeout(function() {
-            //     e.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 600);
+            setTimeout(function() {
+                e.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 600);
 
-            // setTimeout(function() {
-            //     s1.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 900);
+            setTimeout(function() {
+                s1.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 900);
 
-            // setTimeout(function() {
-            //     o.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 1200);
+            setTimeout(function() {
+                o.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 1200);
 
-            // setTimeout(function() {
-            //     m.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 1500);
+            setTimeout(function() {
+                m.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 1500);
 
-            // setTimeout(function() {
-            //     i.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 1800);
+            setTimeout(function() {
+                i.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 1800);
 
-            // setTimeout(function() {
-            //     s2.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 2100);
+            setTimeout(function() {
+                s2.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 2100);
 
-            // setTimeout(function() {
-            //     t.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 2400);
+            setTimeout(function() {
+                t.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 2400);
 
-            // setTimeout(function() {
-            //     s3.animate({
-            //         opacity : 1,    
-            //         transform: "s1,1"
-            //     },500, mina.bounce);
-            // }, 2700);
+            setTimeout(function() {
+                s3.animate({
+                    opacity : 1,    
+                    transform: "s1,1"
+                },500, mina.bounce);
+            }, 2700);
 
-            // setTimeout(function() {
-            //     e.animate(
-            //         states[0],500, mina.bounce);
-            // }, 3000);
+            setTimeout(function() {
+                e.animate(
+                    states[0],500, mina.bounce);
+            }, 3000);
 
-            // setTimeout(function() {
-            //     awesome_anim();
-            // }, 4500);
+            setTimeout(function() {
+                awesome_anim();
+            }, 4500);
 
-            // setTimeout(function() {
-            //     eye.animate({
-            //         opacity : 1
-            //     },10,mina.easin, function() {
-            //         eye.animate({
-            //             opacity : 0,
-            //         });
-            //     });
-            // }, 3500);
-        // }
+            setTimeout(function() {
+                eye.animate({
+                    opacity : 1
+                },10,mina.easin, function() {
+                    eye.animate({
+                        opacity : 0,
+                    });
+                });
+            }, 3500);
+        }
 
-        // awesome_anim();
+        awesome_anim();
 
             
     </script>

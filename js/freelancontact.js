@@ -6,14 +6,13 @@
     var mobile = $("#mobile").val();
     var website = $("#website").val();
     var expertise = $("#expertise").val();
-    var fileupload = $("#fileupload").val();
+    // var fileupload = $("#fileupload").val();
     var desc = $("#desc").val();
  
     $.ajax({
         type: "POST",
         url: "http://localhost/awesomists/freelanmail.php",
-        data: "name=" + name +"&email=" + email + "&mobile=" + mobile + "&website=" + website + "&expertise=" + expertise + "&fileupload=" + fileupload + 
-              "&desc=" + desc, 
+        data: "name=" + name +"&email=" + email + "&mobile=" + mobile + "&website=" + website + "&expertise=" + expertise + "&desc=" + desc, 
         success : function(text){
             if (text == "success"){
                 console.log("success");
@@ -21,9 +20,8 @@
             }
             else
             {
-                console.log("not success" );
+                console.log(text );
                 formFailed();
-                // console.log(text);
             }
         }
     });
