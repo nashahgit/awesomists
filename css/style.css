@@ -3,9 +3,9 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 @import 'https://fonts.googleapis.com/css?family=Roboto:100';
 
-* {
+/** {
     font-family: 'Poppins', sans-serif;
-}
+}*/
 
 body {
     max-width: 100%;
@@ -173,7 +173,9 @@ body {
 
 .service-area .panel >.panel-body {
   background-color: #322a29;
-  text-align: justify;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  /*text-align: justify;*/
   color: #fff;
 }
 
@@ -183,13 +185,13 @@ body {
 
 .service-area .panel{
   background-color: rgba(255, 255, 255, 0);
-/*  border-color: #040404;
-  border-radius: 0px;*/
+  /*border-color: #25365c;*/
+  border-radius: 0px;
   /*box-shadow: 0 1px 2px rgba(0,0,0,0.15);*/
   -webkit-transition : all 0.3s ease-in-out;
   transition : all 0.3s ease-in-out;
   font-family: 'Raleway', sans-serif;
-  /*border: 0px solid transparent;*/
+  border: 2px solid #25365c;
 }
 
 .service-area .panel:hover {
@@ -213,7 +215,7 @@ body {
   color: #fff;
   text-align: center;
   border-color: rgba(255, 255, 254, 0);
-  font-size: 18px;
+  font-size: 24px;
   border-radius: 0;
 }
 
@@ -221,12 +223,31 @@ body {
   margin: 0 auto;
   width: 60px;
 }
-
 .more-abt {
   text-align: center;
   margin-bottom: 10px;
 }
-
+.service-modal {
+  background-color: #ffffff;
+  border-radius: 0px;
+  color: #6b6363;
+}
+.service-modal img {
+  margin: 0 auto;
+  width: 60px;
+}
+.service-modal .modal-title {
+  text-align: center;
+  font-size: 28px;
+}
+.service-modal .modal-body {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px;
+}
+.service-modal button.close {
+  color: #0495f9;
+}
 #motto {
   background-color: #322a29;
 }
@@ -814,11 +835,11 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -861,10 +882,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -902,10 +923,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -950,10 +971,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -994,10 +1015,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1039,10 +1060,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1083,10 +1104,10 @@ img.footerLogo {
      font-size: 1.8em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1128,10 +1149,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1174,10 +1195,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1219,10 +1240,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1264,10 +1285,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1309,10 +1330,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1352,10 +1373,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1396,10 +1417,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1459,10 +1480,10 @@ img.footerLogo {
      font-size: 1.5em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1507,10 +1528,10 @@ img.footerLogo {
      font-size: 1.3em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 20px;
@@ -1559,10 +1580,10 @@ img.footerLogo {
      font-size: 1.5em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 24px;
@@ -1605,10 +1626,10 @@ img.footerLogo {
      font-size: 1.5em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 24px;
@@ -1654,10 +1675,10 @@ img.footerLogo {
      font-size: 1.5em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 24px;
@@ -1700,10 +1721,10 @@ img.footerLogo {
      font-size: 1.8em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 24px;
@@ -1727,7 +1748,7 @@ img.footerLogo {
      font-size: 1.5em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
@@ -1754,10 +1775,10 @@ img.footerLogo {
      font-size: 2.4em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 24px;
@@ -1800,10 +1821,10 @@ img.footerLogo {
      font-size: 1.8em;
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 24px;
@@ -1862,10 +1883,10 @@ img.footerLogo {
       /*height: 90%;*/
   }
   .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   #motto .section-headline {
-    font-size: 35px;
+    font-size: 40px;
   }
   .vision-bg{
     font-size: 28px;
