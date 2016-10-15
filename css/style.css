@@ -192,6 +192,7 @@ body {
   transition : all 0.3s ease-in-out;
   font-family: 'Raleway', sans-serif;
   border: 2px solid #25365c;
+  padding: 15px;
 }
 
 .service-area .panel:hover {
@@ -344,12 +345,17 @@ label.btn:hover {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
 }
+#qMsgprocess, #qMsgSubmit, #qMsgFail {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
 #quoteOpen {
     width: 70px;
     height: 70px;
     position: fixed;
     bottom: 50px;
     right: 0px;
+    cursor: pointer;
     z-index: 9;
 }
 .foot-quote {
@@ -455,6 +461,82 @@ img.footerLogo {
     border-color: #2e6da4;
     border-radius: 0px;
     font-family: 'Raleway', sans-serif;
+}
+#techInsight {
+  /*background-color: #050e24;*/
+  background-color: #050e24;
+/*  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;*/
+}
+/*.nohover {
+  background-color: #050e24;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.hover {
+  background: url("../image/angular-BG.svg") no-repeat center;
+  background-size : cover;
+  background-color: #ffffff;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+  z-index: 8;
+}*/
+.list-block img {
+  display: none;
+}
+#techInsight ul {
+  list-style: none;
+}
+#techInsight .section-headline {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: left;
+  padding-left: 45px;
+}
+.list-name {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+.list-detail {
+  display: block;
+  margin-top: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  /*color: #ffffff;*/
+}
+.insight-col li{
+  padding: 20px 20px 20px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+a.preview-link {
+  text-decoration: none;
+}
+/*.preview-link {
+  -webkit-transition: all 0.15s;
+  -ms-transition: all 0.15s;
+  transition: all 0.15s;
+}*/
+.insight-col>li:hover {
+  background: black;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+  /*border-top: 0px solid rgba(255, 255, 255, 0.15);*/
+  -webkit-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.09);
+  -ms-transform: scale(1.09);
+  transform: scale(1.09);
 }
 
 #third {

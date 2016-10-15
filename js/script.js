@@ -154,9 +154,36 @@ $(document).ready(function(){
         $('.foot-quote').removeClass('slide-up'); 
 	});
 
-	$('#quoteOpen').click(function() {
+	$('#quoteOpen, #menuQuoteOpen').click(function() {
 		$('.foot-quote').removeClass('slide-down');
         $('.foot-quote').addClass('slide-up', 1000, 'easeOutBounce'); 
+	});
+
+	/** code for displaying tech insight BG image on hover **/
+	var $imgsrc;
+	$('.list-block').mouseenter(function(){
+		$('#techInsight').css({"background" : 'none',
+								"background-color" : '#050e24'});
+		$imgsrc = $(this).find("img").attr('src');
+		$('.insight-head').css("opacity", "0");
+		$('.list-block').not(this).css("opacity", "0");
+		$('#techInsight').css({"background" : 'url(' + $imgsrc + ') no-repeat center',
+						 "background-size" : 'cover',
+						 "background-color" : '#ffffff',
+						 "-webkit-transition" : 'all 2.5s',
+						  "-ms-transition" : 'all 2.5s',
+						  "transition" : 'all 2.5s',
+						  "z-index" : '8'	
+						});
+	}).mouseleave(function(){
+		$('.insight-head').css("opacity", "1");
+		$('.list-block').not(this).css("opacity", "1");
+		$('#techInsight').css({"background" : 'none',
+						"-webkit-transition" : 'all 2.5s',
+						  "-ms-transition" : 'all 2.5s',
+						  "transition" : 'all 2.5s',
+						"background-color" : '#050e24'
+		});
 	});
 
 	//});

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="crocodile" 
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="669px" height="300px"
+	 viewBox="-323 131 669 300" style="enable-background:new -323 131 669 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF8C69;}
+	.st1{opacity:0.2;fill:#1600EB;enable-background:new    ;}
+	.st2{fill:#09B39C;}
+	.st3{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+	.st4{fill:#E0CAB1;}
+	.st5{opacity:0.4;fill:#FFFFFF;enable-background:new    ;}
+	.st6{fill:none;}
+	.st7{fill:#FFFFFF;}
+	.st8{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
+	.st9{opacity:0.1;fill:#534741;enable-background:new    ;}
+	.st10{fill:url(#bottom_1_);stroke:url(#bottom_2_);}
+	.st11{fill:url(#right_2_);stroke:url(#right_3_);}
+	.st12{fill:url(#right-2_1_);stroke:url(#right-2_2_);}
+	.st13{fill:url(#left_2_);stroke:url(#left_3_);}
+	.st14{fill:url(#top_1_);stroke:url(#top_2_);}
+</style>
+<rect x="-323.3" y="131" class="st0" width="669.3" height="300"/>
+<path id="symbol" class="st1" d="M-100.2,300.1l6,13l9.8-4.5l-6-13L-100.2,300.1z M-26.8,262.2l-57.1,30.4l6,13l60.1-23.9
+	L-26.8,262.2z"/>
+<g id="head">
+	<polygon class="st2" points="-269.5,307 -291,299.9 -312.5,307 -323.3,307 -323.3,378.8 -269.5,378.8 -179.7,378.8 -179.7,332.2 	
+		"/>
+	<polygon class="st3" points="-323.3,307 -308.9,335.8 -291,299.9 -312.5,307 	"/>
+	<polyline class="st3" points="-312.5,307 -298.2,314.2 -291,299.9 	"/>
+	<polygon class="st3" points="-269.5,307 -258.7,327.4 -301.8,303.5 -291,299.9 	"/>
+</g>
+<g id="upper-head">
+	<g id="upper-jaw">
+		<g>
+			<path id="upper-teeth" class="st4" d="M-141.6,286.3l17.9,7.3l-7.9-17.6L-141.6,286.3z M-156.6,301.8l17.9,7.3l-7.9-17.6
+				L-156.6,301.8z M-171.5,317.2l17.9,7.3l-7.9-17.6L-171.5,317.2z M-126.6,270.8l17.9,7.3l-7.9-17.6L-126.6,270.8z M-111.7,255.3
+				l17.9,7.3l-7.9-17.6L-111.7,255.3z M-96.7,239.8l17.9,7.3l-7.9-17.6L-96.7,239.8z M-81.8,224.3l17.9,7.3l-7.9-17.6L-81.8,224.3z
+				 M-56.8,198.5l-10,10.3l17.9,7.3L-56.8,198.5z"/>
+			<path class="st5" d="M-136.6,281.1l12.9,12.5l-7.9-17.6L-136.6,281.1z M-151.6,296.6l12.9,12.5l-7.9-17.6L-151.6,296.6z
+				 M-166.5,312.1l12.9,12.5l-7.9-17.6L-166.5,312.1z M-121.6,265.6l12.9,12.5l-7.9-17.6L-121.6,265.6z M-106.7,250.1l12.9,12.5
+				l-7.9-17.6L-106.7,250.1z M-91.7,234.6l12.9,12.5l-7.9-17.6L-91.7,234.6z M-76.8,219.1l12.9,12.5l-7.9-17.6L-76.8,219.1z
+				 M-56.8,198.5l-5,5.2l12.9,12.5L-56.8,198.5z"/>
+		</g>
+		<polygon class="st2" points="-64.8,170.6 -82.8,170.6 -86.4,187.3 -212.6,281 -217,337 -195.3,347.8 -39.7,188.5 		"/>
+		<polygon class="st3" points="-212.6,281 -206.1,311.8 -86.4,187.3 		"/>
+		<line class="st6" x1="-86.4" y1="187.3" x2="-212.6" y2="281"/>
+		<polygon class="st3" points="-82.8,170.6 -39.7,188.5 -64.8,170.6 		"/>
+		<polygon class="st3" points="-86.4,187.3 -64.8,170.6 -82.8,170.6 		"/>
+	</g>
+	<polygon class="st2" points="-212.6,281 -244.3,283.1 -269.5,307 -269.5,342.8 -179.7,342.8 -179.7,332.2 -193.5,318.7 	"/>
+	<polygon class="st3" points="-212.6,281 -200.1,305.8 -244.3,283.1 	"/>
+	<polygon class="st3" points="-269.5,307 -200.1,305.8 -212.6,281 -244.3,283.1 	"/>
+	<polygon id="eye_1_" class="st7" points="-237.2,305.8 -222.8,298.7 -208.4,305.8 -226.4,316.6 	"/>
+	<polygon class="st3" points="-269.5,307 -269.5,321.4 -212.6,281 -244.3,283.1 	"/>
+</g>
+<g id="bottom-jaw">
+	<g>
+		<polygon class="st4" points="-140,353.7 -132.8,335.8 -125.6,353.7 		"/>
+		<polygon class="st5" points="-125.6,353.7 -132.8,335.8 -132.8,353.7 		"/>
+	</g>
+	<g>
+		<polygon class="st4" points="-118.4,353.7 -111.2,335.8 -104.1,353.7 		"/>
+		<polygon class="st5" points="-104.1,353.7 -111.2,335.8 -111.2,353.7 		"/>
+	</g>
+	<g>
+		<polygon class="st4" points="-96.9,353.7 -89.7,335.8 -82.5,353.7 		"/>
+		<polygon class="st5" points="-82.5,353.7 -89.7,335.8 -89.7,353.7 		"/>
+	</g>
+	<g>
+		<polygon class="st4" points="-75.4,353.7 -68.2,335.8 -61,353.7 		"/>
+		<polygon class="st5" points="-61,353.7 -68.2,335.8 -68.2,353.7 		"/>
+	</g>
+	<g>
+		<polygon class="st4" points="-53.8,353.7 -46.6,335.8 -39.5,353.7 		"/>
+		<polygon class="st5" points="-39.5,353.7 -46.6,335.8 -46.6,353.7 		"/>
+	</g>
+	<polygon class="st4" points="-144.8,346.5 -179.5,332.2 -191.4,332.2 -198.6,332.2 -212.9,332.2 -227.3,346.5 -323,371.6 
+		-323,378.8 -227.3,378.8 -135.2,378.8 -98.1,369.3 -40.7,358.5 -29.9,346.5 	"/>
+	<polygon class="st8" points="-179.5,332.2 -212.9,332.2 -227.3,346.5 	"/>
+	<polygon class="st8" points="-212.9,332.2 -227.3,378.8 -227.3,346.5 	"/>
+	<polygon class="st9" points="-40.7,358.5 -130.4,365.7 -184.2,378.8 -135.2,378.8 -98.1,369.3 	"/>
+	<polygon class="st9" points="-98.1,369.3 -130.4,365.7 -135.2,378.8 -135.2,378.8 	"/>
+	<polygon class="st8" points="-323,371.6 -266.8,364.5 -227.3,346.5 	"/>
+</g>
+<linearGradient id="bottom_1_" gradientUnits="userSpaceOnUse" x1="241" y1="599.126" x2="241" y2="846.0791" gradientTransform="matrix(1 0 0 1 -50 -449)">
+	<stop  offset="0" style="stop-color:#002E3B"/>
+	<stop  offset="1" style="stop-color:#002639"/>
+</linearGradient>
+<linearGradient id="bottom_2_" gradientUnits="userSpaceOnUse" x1="240.9973" y1="599.126" x2="240.9973" y2="846.0791" gradientTransform="matrix(1 0 0 1 -50 -449)">
+	<stop  offset="0" style="stop-color:#002E3B"/>
+	<stop  offset="1" style="stop-color:#002639"/>
+</linearGradient>
+<polygon id="bottom" class="st10" points="190.9,361.7 155.1,344.3 155.1,344.2 155.1,344.2 117,362.8 190.9,398.9 265,362.9 
+	226.8,344 "/>
+<radialGradient id="right_2_" cx="129.3041" cy="177.3892" r="219.7985" gradientTransform="matrix(1 0 0 -1 0 564)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#00BC85"/>
+	<stop  offset="1" style="stop-color:#149D91"/>
+</radialGradient>
+<radialGradient id="right_3_" cx="129.3041" cy="177.3892" r="219.7985" gradientTransform="matrix(1 0 0 -1 0 564)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#00BC85"/>
+	<stop  offset="1" style="stop-color:#149D91"/>
+</radialGradient>
+<polygon id="right_1_" class="st11" points="117.1,362.9 117.1,325.8 153.7,307.9 191.5,326.5 "/>
+<radialGradient id="right-2_1_" cx="252.8275" cy="587.2165" r="265.5574" gradientTransform="matrix(1 0 0 1 -50 -449)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#00BC85"/>
+	<stop  offset="1" style="stop-color:#149D91"/>
+</radialGradient>
+<radialGradient id="right-2_2_" cx="252.8275" cy="587.2165" r="265.5574" gradientTransform="matrix(1 0 0 1 -50 -449)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#00BC85"/>
+	<stop  offset="1" style="stop-color:#149D91"/>
+</radialGradient>
+<polygon id="right-2" class="st12" points="231.6,210 231.6,268.8 231.6,268.8 231.6,268.8 190.6,288.7 228.3,307.5 265,289.6 
+	265,189.1 "/>
+<radialGradient id="left_2_" cx="184.0562" cy="567.7601" r="507.5908" gradientTransform="matrix(1 0 0 1 -50 -449)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#004473"/>
+	<stop  offset="1" style="stop-color:#00345F"/>
+</radialGradient>
+<radialGradient id="left_3_" cx="184.0562" cy="567.7601" r="507.5908" gradientTransform="matrix(1 0 0 1 -50 -449)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#004473"/>
+	<stop  offset="1" style="stop-color:#00345F"/>
+</radialGradient>
+<polygon id="left_1_" class="st13" points="265,362.9 265,362.9 265,325.7 150.5,268.7 150.5,210 117.1,189.1 117.1,289.6 "/>
+<linearGradient id="top_1_" gradientUnits="userSpaceOnUse" x1="240.922" y1="600.3843" x2="240.922" y2="846.0882" gradientTransform="matrix(1 0 0 1 -50 -449)">
+	<stop  offset="0" style="stop-color:#002E3B"/>
+	<stop  offset="1" style="stop-color:#002639"/>
+</linearGradient>
+<linearGradient id="top_2_" gradientUnits="userSpaceOnUse" x1="241.1869" y1="600.3843" x2="241.1869" y2="846.0882" gradientTransform="matrix(1 0 0 1 -50 -449)">
+	<stop  offset="0" style="stop-color:#002E3B"/>
+	<stop  offset="1" style="stop-color:#002639"/>
+</linearGradient>
+<polygon id="top" class="st14" points="150.4,209.9 150.4,209.9 190.9,190.1 231.5,209.9 264.8,189 190.9,153 117,189 117,189.1 
+	150.4,209.9 "/>
+</svg>
