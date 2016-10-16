@@ -353,10 +353,10 @@ label.btn:hover {
 }
 #shareButton {
   position: fixed;
-  right: 20px;
-  top: 60px;
-  width: 50px;
-  height: 50px;
+  right: 18px;
+  bottom: 120px;
+  width: 48px;
+  height: 48px;
   border-radius: 100%;
   padding: 10px;
   background-color: #ffffff;
