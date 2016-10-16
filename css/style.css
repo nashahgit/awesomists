@@ -579,7 +579,8 @@ ul.footer-contact .phone {
   font-family: 'Roboto', sans-serif;
 }
 ul.footer-contact li {
-  padding: 10px 10px 10px 40px;
+  text-align: center;
+  padding: 10px 10px 10px 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 #map-pin {
@@ -596,7 +597,8 @@ ul.footer-menu {
   list-style: none;
 }
 ul.footer-menu li {
-  padding: 10px 10px 10px 40px;
+  text-align: center;
+  padding: 10px 10px 10px 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 ul.footer-menu li a{
@@ -612,7 +614,39 @@ ul.footer-menu li a{
   width: 50px;
   height:auto;
 }
-
+ul.footer-social{
+  list-style: none;
+}
+ul.footer-social li{
+  padding: 10px 10px 10px 40px;
+  /*padding-bottom: 10px;*/
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+#connect-icons {
+  width: 100%;
+}
+#connect-icons img{
+  margin: 0 auto;
+  width: 50px;
+  height:auto;
+}
+.social-icon {
+ /* width: 50px;
+  height: 50px;*/
+  text-align: center;
+}
+.social-icon img {
+  width:50px;
+  height: auto;
+  margin-right: 10px;
+}
+.social-icon table {
+  display: inline-block;
+}
+.copyright {
+  text-align: center;
+  color: #b4acac;
+}
 #third {
 	width: 100vw;
 	height: 100vh;
