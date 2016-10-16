@@ -2,6 +2,11 @@
 $(document).ready(function(){
 
 	/* Animating the first logo part */
+	// window.onload = function() { 
+ //  		document.getElementById("hideAll").style.display = "none"; 
+ //  	}
+
+ //  	document.getElementById("hideAll").style.display = "block";
 
 	$('.logo').click(function() {
 
@@ -187,6 +192,11 @@ $(document).ready(function(){
 						  "transition" : 'all 2.5s',
 						"background-color" : '#050e24'
 		});
+	});
+
+	$('#shareButton').hover(function() {
+		$('#fb-share-btn').css("display", "block");
+		$('#twitter-share-btn').css("display", "block");
 	});
 
 	//});

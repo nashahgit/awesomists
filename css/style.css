@@ -367,6 +367,42 @@ label.btn:hover {
   width: 100%;
   height: auto;
 }
+#fb-share-btn {
+  display: none;
+  position: fixed;
+  right: 18px;
+  bottom: 175px;
+  width: 48px;
+  height: 48px;
+  z-index: 9;
+  -webkit-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+#fb-share-btn img {
+  width: 100%;
+  height: auto;
+}
+#twitter-share-btn {
+  display: none;
+  position: fixed;
+  right: 18px;
+  bottom: 230px;
+  width: 48px;
+  height: 48px;
+  z-index: 9;
+  -webkit-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+#twitter-share-btn img {
+  width: 100%;
+  height: auto;
+}
+/*#shareButton:hover #fb-share-btn, #shareButton:hover #twitter-share-btn {
+  display: block;
+}*/
+
 #quoteOpen {
     width: 70px;
     height: 70px;

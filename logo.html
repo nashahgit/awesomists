@@ -7,78 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.offcanvas.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
-        body {
-            /*background: url(image/md.png), no-repeat, center;*/
-        }
-        .st0{fill:#0EA9D8;}
-        .portrait {
-          position: fixed;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: 0;
-          background: url(http://www.attasi.com/images/portrait-3-small.jpg) center #131313;
-          background-size: cover;
-          -webkit-transform: scale(1.05);
-          -ms-transform: scale(1.05);
-          transform: scale(1.05); }
-          @media (max-width: 700px), (max-height: 500px) {
-            .portrait {
-              position: absolute;
-              background-image: url(http://www.attasi.com/images/portrait-3-small.jpg); } }
-          .portrait.no-bg {
-            background: #131313; 
-        }
-
-        .lines {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0; }
-
-        .line {
-          position: absolute;
-          top: 50%;
-          margin-top: -2000px;
-          height: 4000px;
-          width: 10px;
-          background: black;
-          -webkit-transform: rotate(45deg) scale(0);
-          -ms-transform: rotate(45deg) scale(0);
-          transform: rotate(45deg) scale(0); 
-        }
-
-
-        #div1 {
-            position: absolute; 
-            width: 150%;
-            height: 33.3333vh;
-            background-color: red;
-            -webkit-transform: rotateZ(-45deg); /* Safari */
-            transform: rotateZ(-45deg); /* Standard syntax */
-            z-index: 1;
-        }
-        #div2 {
-            position: absolute; 
-            width: 150%;
-            height: 66.666vh;
-            background-color: green;
-            -webkit-transform: rotateZ(-45deg); /* Safari */
-            transform: rotateZ(-45deg); /* Standard syntax */
-            z-index: 0;
-        }
-        #div3 {
-            position: absolute; 
-            width: 150%;
-            height: 100vh;
-            background-color: blue;
-            -webkit-transform: rotateZ(-45deg); /* Safari */
-            transform: rotateZ(-45deg); /* Standard syntax */
-            z-index: -1;
-        }
-
+        
+        .st0-load{fill:#0EA9D8;}
+      
         #box {
             width: 100%;
             height: 100%;
@@ -120,44 +51,44 @@
 
     <div id="box">
         <svg version="1.1" id="Layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="80%" height="auto" viewBox="-11 172 936 217" style="enable-background:new -11 172 936 217;" xml:space="preserve">
+        width="80%" height="100%" viewBox="-11 172 936 217" style="enable-background:new -11 172 936 217;" xml:space="preserve">
     
         <g id="canvas">
-        <path id="a" class="st0" d="M69.7,273.9H71v-1.6c0-7.6-5.8-10-13.3-10c-8.8,0-18.6,5.1-22.6,7.5c-0.9,0.5-2.2,0.2-2.7-0.8l-8.8-18
+        <path id="a" class="st0-load" d="M69.7,273.9H71v-1.6c0-7.6-5.8-10-13.3-10c-8.8,0-18.6,5.1-22.6,7.5c-0.9,0.5-2.2,0.2-2.7-0.8l-8.8-18
             c-0.4-0.8-0.1-1.9,0.6-2.4c4.3-2.8,18.1-10.7,36.4-10.7c25.3,0,40.6,13.9,40.6,36.8v53.5c0,1.1-0.8,1.9-1.9,1.9H75.6
             c-1.1,0-1.9-0.8-1.9-1.9v-3.5c0-2.9,0.3-5.6,0.3-5.6h-0.3c0,0-6.6,13.1-25.5,13.1c-16.8,0-30.6-11.2-30.6-29
             C17.3,277,55.6,273.9,69.7,273.9z M56.3,309.1c7.9,0,14.8-8.6,14.8-15.9l0,0c0-1.1-0.8-1.9-1.9-1.9h-0.8c-9.7,0-20.6,2.8-20.6,10.3
             C47.7,305.8,50.3,309.1,56.3,309.1z"/>
-        <path id="w" class="st0" d="M100.1,240h27.7c0.9,0,1.7,0.6,1.9,1.6l10.8,51.6c1.1,4.9,1.1,9.5,1.1,9.5h0.3c0,0,0.3-4.5,1.6-9.5l12.1-51.7
+        <path id="w" class="st0-load" d="M100.1,240h27.7c0.9,0,1.7,0.6,1.9,1.6l10.8,51.6c1.1,4.9,1.1,9.5,1.1,9.5h0.3c0,0,0.3-4.5,1.6-9.5l12.1-51.7
             c0.2-0.8,0.9-1.5,1.9-1.5h22.8c0.9,0,1.7,0.6,1.9,1.5l12.1,51.7c1.3,4.9,1.4,9.5,1.4,9.5h0.3c0,0,0.2-4.5,1.3-9.5l10.8-51.6
             c0.2-0.8,0.9-1.6,1.9-1.6h27.4c1.3,0,2.2,1.3,1.9,2.4l-24.1,86.3c-0.2,0.8-0.9,1.4-1.9,1.4h-30.8c-0.8,0-1.7-0.6-1.9-1.5l-9.8-40.1
             c-1.3-4.9-1.8-9.7-1.8-9.7h-0.3c0,0-0.5,4.7-1.8,9.7l-9.8,40.1c-0.2,0.8-0.9,1.5-1.9,1.5h-31.1c-0.8,0-1.6-0.5-1.9-1.4l-24-86.2
             C97.9,241.2,98.9,240,100.1,240z"/>
         <path id="e" style="fill: #0EA9D8;" d="M281.2,237.9c26.6,0,41.6,18.5,41.6,43.5c0,2-0.3,5.6-0.5,7.7c-0.1,0.9-0.9,1.7-1.9,1.7h-52.6   c-1.4,0-2.2,1.3-1.8,2.5c3,9.2,11.5,13.6,20.3,13.6c10,0,19.3-5.5,23.1-7.9c0.9-0.6,2.2-0.3,2.7,0.7l9.5,17.9   c0.4,0.8,0.2,1.9-0.5,2.4c-4,3-17.3,12.1-37.2,12.1c-32.2,0-49.5-23.2-49.5-47.2C234.3,258.6,252.2,237.9,281.2,237.9z    M290.3,273.6c1.2,0,2.1-1.1,1.9-2.2c-0.9-5.9-5.4-10.7-11.8-10.7c-7.6,0-11.8,4.7-13.8,10.4c-0.4,1.3,0.5,2.5,1.8,2.5   C268.5,273.6,290.3,273.6,290.3,273.6z"/>
         
-        <path id="s1" class="st0" d="M336.7,300.4c0.6-0.9,1.9-1.2,2.7-0.5c3.4,2.5,11.5,7.8,21.3,7.8c4.5,0,8.9-1.3,8.9-4.2
+        <path id="s1" class="st0-load" d="M336.7,300.4c0.6-0.9,1.9-1.2,2.7-0.5c3.4,2.5,11.5,7.8,21.3,7.8c4.5,0,8.9-1.3,8.9-4.2
             c0-7.9-42.1-8.7-42.1-38.1c0-16.9,16.3-27.4,37.1-27.4c16.9,0,27.2,6.7,30.5,9.4c0.7,0.5,0.9,1.6,0.5,2.3l-8.7,18.1
             c-0.5,1.1-1.8,1.5-2.8,0.7c-3.2-2.1-10.3-6.1-19.5-6.1c-4.5,0-8.9,1.3-8.9,4.4c0,6.8,42.1,7.9,42.1,36.9
             c0,15.3-13.7,28.5-36.9,28.5c-18.5,0-30.9-8.9-34.8-12.2c-0.7-0.6-0.9-1.7-0.4-2.5L336.7,300.4z"/>
-        <path id="o" class="st0" d="M450.2,237.9c28.5,0,51.3,19,51.3,47.4c0,28.2-22.7,46.9-51.1,46.9c-28.4,0-51.1-18.7-51.1-46.9
+        <path id="o" class="st0-load" d="M450.2,237.9c28.5,0,51.3,19,51.3,47.4c0,28.2-22.7,46.9-51.1,46.9c-28.4,0-51.1-18.7-51.1-46.9
             C399.3,257,422,237.9,450.2,237.9z M450.4,307c11,0,20.5-8.2,20.5-21.6c0-13.7-9.5-22.2-20.5-22.2s-20.5,8.6-20.5,22.2
             C429.9,298.8,439.3,307,450.4,307z"/>
-        <path id="m" class="st0" d="M507.5,240h25.2c1.1,0,1.9,0.8,1.9,1.9v6c0,2.9-0.3,5.6-0.3,5.6h0.3c4.2-6.3,12.6-15.6,26.8-15.6
+        <path id="m" class="st0-load" d="M507.5,240h25.2c1.1,0,1.9,0.8,1.9,1.9v6c0,2.9-0.3,5.6-0.3,5.6h0.3c4.2-6.3,12.6-15.6,26.8-15.6
             c11.3,0,20.5,5,25.2,15.2h0.3c4.7-7.6,15.3-15.2,28.9-15.2c16.4,0,29.2,8.9,29.2,33.7v56.5c0,1.1-0.8,1.9-1.9,1.9h-26.4
             c-1.1,0-1.9-0.8-1.9-1.9v-51.4c0-6.6-1.3-11.3-7-11.3c-9.7,0-14.7,7-16.6,16.9c-0.7,3.2-0.7,6.8-0.7,10.5v35.3
             c0,1.1-0.8,1.9-1.9,1.9h-26.4c-1.1,0-1.9-0.8-1.9-1.9v-51.4c0-6.6-1.3-11.3-7-11.3c-9.5,0-14.3,6.6-16.4,16.3
             c-0.7,3.4-0.8,7.4-0.8,11.2v35.3c0,1.1-0.8,1.9-1.9,1.9h-26.4c-1.1,0-1.9-0.8-1.9-1.9v-86.3C505.5,240.9,506.5,240,507.5,240z"/>
-        <path id="i" class="st0" d="M654.4,240h26.4c1.1,0,1.9,0.8,1.9,1.9v86.3c0,1.1-0.8,1.9-1.9,1.9h-26.4c-1.1,0-1.9-0.8-1.9-1.9v-86.2
+        <path id="i" class="st0-load" d="M654.4,240h26.4c1.1,0,1.9,0.8,1.9,1.9v86.3c0,1.1-0.8,1.9-1.9,1.9h-26.4c-1.1,0-1.9-0.8-1.9-1.9v-86.2
             C652.5,240.9,653.4,240,654.4,240z"/>
-        <path  id="s2" class="st0" d="M698.4,300.4c0.6-0.9,1.9-1.2,2.7-0.5c3.4,2.5,11.5,7.8,21.3,7.8c4.5,0,8.9-1.3,8.9-4.2
+        <path  id="s2" class="st0-load" d="M698.4,300.4c0.6-0.9,1.9-1.2,2.7-0.5c3.4,2.5,11.5,7.8,21.3,7.8c4.5,0,8.9-1.3,8.9-4.2
             c0-7.9-42.1-8.7-42.1-38.1c0-16.9,16.3-27.4,37.1-27.4c16.9,0,27.2,6.7,30.5,9.4c0.7,0.5,0.9,1.6,0.5,2.3l-8.7,18.1
             c-0.5,1.1-1.8,1.5-2.8,0.7c-3.2-2.1-10.3-6.1-19.5-6.1c-4.5,0-8.9,1.3-8.9,4.4c0,6.8,42.1,7.9,42.1,36.9
             c0,15.3-13.7,28.5-36.9,28.5c-18.5,0-30.9-8.9-34.8-12.2c-0.7-0.6-0.9-1.7-0.4-2.5L698.4,300.4z"/>
-        <path id="t" class="st0" d="M819.3,240c1.1,0,1.9,0.8,1.9,1.9v21.4c0,1.1-0.8,1.9-1.9,1.9h-15c-1.1,0-1.9,0.8-1.9,1.9v25.7
+        <path id="t" class="st0-load" d="M819.3,240c1.1,0,1.9,0.8,1.9,1.9v21.4c0,1.1-0.8,1.9-1.9,1.9h-15c-1.1,0-1.9,0.8-1.9,1.9v25.7
             c0,10.2,10.3,11.6,16.1,11.6c0.7,0,1.5,0,2,0c1.1,0,2,0.8,2,1.9v22.5c0,0.9-0.7,1.8-1.7,1.9c-1.5,0.1-3.7,0.3-6.5,0.3
             c-14.3,0-42.1-3.9-42.1-34.2v-29.7c0-1.1-0.8-1.9-1.9-1.9h-7.7c-1.1,0-1.9-0.8-1.9-1.9v-21.4c0-1.1,0.8-1.9,1.9-1.9L819.3,240
             L819.3,240z"/>
-        <path id="s3" class="st0" d="M837.6,300.4c0.6-0.9,1.9-1.2,2.7-0.5c3.4,2.5,11.5,7.8,21.3,7.8c4.5,0,8.9-1.3,8.9-4.2
+        <path id="s3" class="st0-load" d="M837.6,300.4c0.6-0.9,1.9-1.2,2.7-0.5c3.4,2.5,11.5,7.8,21.3,7.8c4.5,0,8.9-1.3,8.9-4.2
             c0-7.9-42.1-8.7-42.1-38.1c0-16.9,16.3-27.4,37.1-27.4c16.9,0,27.2,6.7,30.5,9.4c0.7,0.5,0.9,1.6,0.5,2.3l-8.7,18.1
             c-0.5,1.1-1.8,1.5-2.8,0.7c-3.2-2.1-10.3-6.1-19.5-6.1c-4.5,0-8.9,1.3-8.9,4.4c0,6.8,42.1,7.9,42.1,36.9
             c0,15.3-13.7,28.5-36.9,28.5c-18.5,0-30.9-8.9-34.8-12.2c-0.7-0.6-0.9-1.7-0.4-2.5L837.6,300.4z"/>
@@ -169,88 +100,6 @@
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="Snap.svg-0.4.1/dist/snap.svg-min.js"></script>
     <script type="text/javascript">
-
-  //   var SCROLL_THROTTLE = 32;
-  //   var NUM_LINES = 5;
-
-  //     function throttle(fn, time) {
-  //       var timer;
-
-  //       return function() {
-  //         if (timer) {
-  //           return;
-  //         }
-
-  //         fn.apply(this, arguments);
-
-  //         timer = setTimeout(function() {
-  //           clearTimeout(timer);
-  //           timer = undefined;
-  //         }, time);
-  //       };
-  //     }
-
-  //     function setTransform(element, transform) {
-  //       element.style['-webkit-transform'] = transform;
-  //       element.style['-ms-transform'] = transform;
-  //       element.style['transform'] = transform;
-  //     }
-
-
-  //     // blinds
-  //     var lines = document.querySelector('.lines');
-  //     var allLines = [];
-  //     for (var i = 0; i < NUM_LINES; i++) {
-  //       var line = document.createElement('div');
-  //       line.setAttribute('class', 'line');
-  //       lines.appendChild(line);
-  //       line.style.width = (5 + (Math.random() * 10)) + 'px';
-  //       line.style.left = (-25 + (Math.random() * 150)) + '%';
-  //       setTransform(line, 'rotate(45deg) scaleX(0)');
-  //       allLines.push(line);
-  //     }
-
-  //   var onScroll = throttle(function() {
-  //   var scrollTop = window.scrollY;
-  //   var per = 0;
-  //   var atTop = true;
-
-  //   if (scrollTop < topOffset) {
-  //     per = 1 - (scrollTop / topOffset) + .1;
-  //   } else if (scrollTop + windowHeight > projectsTop) {
-  //     per = (scrollTop + windowHeight - projectsTop) / (pageHeight - projectsTop) - .3;
-  //   }
-
-  //   // handle at top
-  //   if (scrollTop > macawTop) {
-  //     atTop = false;
-  //   }
-  //   portrait.classList.toggle('no-bg', !atTop);
-
-  //   var detailsHidden = details.classList.contains('hidden');
-  //   if (!atTop && !detailsHidden) {
-  //     details.classList.add('hidden');
-  //   } else if (atTop && detailsHidden) {
-  //     details.classList.remove('hidden');
-  //   }
-
-  //   per = Math.min(per, 1);
-  //   per = Math.max(per, 0);
-
-  //   // portrait props
-  //   portrait.style.opacity = atTop ? per : 1;
-  //   var portraitScale = 1 + (per * .05);
-  //   // cool but too much of a perf hit
-  //   // setTransform(portrait, atTop ? 'scale3d(' + portraitScale + ', ' + portraitScale + ', ' + portraitScale + ')' : 'none');
-
-  //   // lines
-  //   var scale = 20 - (per * 20);
-  //   for (var i = 0; i < allLines.length; i++) {
-  //     var line = allLines[i];
-  //     var x = 0;
-  //     setTransform(line, 'rotate(45deg) scaleX(' + scale + ')');
-  //   }
-  // }, SCROLL_THROTTLE);
 
         var s = Snap("#canvas");
 
@@ -361,15 +210,15 @@
                 awesome_anim();
             }, 4500);
 
-            setTimeout(function() {
-                eye.animate({
-                    opacity : 1
-                },10,mina.easin, function() {
-                    eye.animate({
-                        opacity : 0,
-                    });
-                });
-            }, 3500);
+            // setTimeout(function() {
+            //     eye.animate({
+            //         opacity : 1
+            //     },10,mina.easin, function() {
+            //         eye.animate({
+            //             opacity : 0,
+            //         });
+            //     });
+            // }, 3500);
         }
 
         awesome_anim();
