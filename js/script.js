@@ -159,6 +159,9 @@ $(document).ready(function(){
         $('.foot-quote').addClass('slide-up', 1000, 'easeOutBounce'); 
 	});
 
+	/*** Hover Tool tip ***/
+	$('[data-toggle="tooltip"]').tooltip();
+
 	/** code for displaying tech insight BG image on hover **/
 	var $imgsrc;
 	$('.list-block').mouseenter(function(){
