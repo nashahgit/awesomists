@@ -375,9 +375,9 @@ label.btn:hover {
   width: 48px;
   height: 48px;
   z-index: 9;
-  -webkit-transition: all 1s;
+ /* -webkit-transition: all 1s;
   -ms-transition: all 1s;
-  transition: all 1s;
+  transition: all 1s;*/
 }
 #fb-share-btn img {
   width: 100%;
@@ -391,16 +391,16 @@ label.btn:hover {
   width: 48px;
   height: 48px;
   z-index: 9;
-  -webkit-transition: all 1s;
+ /* -webkit-transition: all 1s;
   -ms-transition: all 1s;
-  transition: all 1s;
+  transition: all 1s;*/
 }
 #twitter-share-btn img {
   width: 100%;
   height: auto;
 }
-/*#shareButton:hover #fb-share-btn, #shareButton:hover #twitter-share-btn {
-  display: block;
+/*.button-set {
+  display: none;
 }*/
 
 #quoteOpen {

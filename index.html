@@ -23,11 +23,33 @@
         <!--script type="text/javascript" src="js/jquery.parallaxify.min.js"></script-->
         <script type="text/javascript" src="Snap.svg-0.4.1/dist/snap.svg-min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        <!--script type="text/javascript" src="js/awe-anim.js"></script-->
-        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+        <!--script type="text/javascript" src="js/awe-anim.js"></script-->  
+
+        <style type="text/css">
+            /*.no-js #loader { display: none;  }*/
+            .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+            .se-pre-con {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: url(image/loader-image.gif) center no-repeat #fff;
+            }
+        </style>
+        <script type="text/javascript">
+            window.onload = function() {
+                $(".se-pre-con").fadeOut("slow");
+                // console.log("Loaded.......................................");
+            }
+         </script>
+
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        
+        <div class="se-pre-con"></div>
+        <!-- <div style="display: none" id="hideAll"><img class="img-responsive" src="image/loader-image.gif"></div> -->
     	<div class="wrap">
             <div class="modal fade" id="freelanContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -233,19 +255,23 @@
                 </div>
               </div>
             </nav>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http://awesomists.com" target="_blank">
-                <div id="fb-share-btn">
-                    <img src="image/fb-circular-logo.svg">
+
+            <div class="button-set">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://awesomists.com" target="_blank">
+                    <div id="fb-share-btn">
+                        <img src="image/fb-circular-logo.svg">
+                    </div>
+                </a>
+                <a href="https://twitter.com/home?status=http://awesomists.com" target="_blank">
+                <div id="twitter-share-btn">
+                    <img src="image/twitter-logo-button.svg">
                 </div>
-            </a>
-            <a href="https://twitter.com/home?status=http://awesomists.com" target="_blank">
-            <div id="twitter-share-btn">
-                <img src="image/twitter-logo-button.svg">
-            </div>
-            </a>
-            <div id="shareButton" data-toggle="tooltip" data-placement="left" title="Share">
-                <img src="image/ic_share_white_48px.svg">
-            </div>
+                </a>
+            
+                <div id="shareButton" data-toggle="tooltip" data-placement="left" title="Share">
+                    <img src="image/ic_share_white_48px.svg">
+                </div>
+           </div>
             <div id="quoteOpen" data-toggle="tooltip" data-placement="left" title="Get a Quote">
                 <img src="image/quote-icon.svg" width="80%">
             </div>
@@ -728,7 +754,10 @@
                             <tr>
                                 <td><img class="fb" src="image/fb-icon.svg"></td>
            
-                                <td><img class="mail" src="image/mail-icon.svg"></td>
+                                <td><a href="mailto:nashah25@gmail.com">
+                                        <img class="mail" src="image/mail-icon.svg">
+                                    </a>
+                                </td>
 
                                 <td><img class="dribble" src="image/dribble-icon.svg"></td>
                  

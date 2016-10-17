@@ -2,12 +2,6 @@
 $(document).ready(function(){
 
 	/* Animating the first logo part */
-	// window.onload = function() { 
- //  		document.getElementById("hideAll").style.display = "none"; 
- //  	}
-
- //  	document.getElementById("hideAll").style.display = "block";
-
 	$('.logo').click(function() {
 
 		$(".logo").animate({
@@ -194,9 +188,13 @@ $(document).ready(function(){
 		});
 	});
 
+
 	$('#shareButton').hover(function() {
-		$('#fb-share-btn').css("display", "block");
-		$('#twitter-share-btn').css("display", "block");
+		$("#fb-share-btn").fadeIn("slow");
+		$("#twitter-share-btn").fadeIn("slow");
+	}, function() {
+		$("#fb-share-btn").fadeOut(4000);
+		$("#twitter-share-btn").fadeOut(4000);
 	});
 
 	//});
