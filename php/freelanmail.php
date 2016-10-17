@@ -1,7 +1,7 @@
 <?php
-require 'PHPMailer-master/class.phpmailer.php';
-require 'PHPMailer-master/class.smtp.php';
-require 'PHPMailer-master/PHPMailerAutoload.php';
+require 'http://awesomists.com/php/PHPMailer-master/class.phpmailer.php';
+require 'http://awesomists.com/php/PHPMailer-master/class.smtp.php';
+require 'http://awesomists.com/php/PHPMailer-master/PHPMailerAutoload.php';
 
 $name = $_POST["name"];
 $email = $_POST["email"];

@@ -51,7 +51,7 @@
 
     $.ajax({
         type: "POST",
-        url: "../awesomists/php/quotemail.php",
+        url: "http://awesomists.com/php/quotemail.php",
         data: "name=" + name +"&email=" + email + "&mobile=" + mobile + "&company=" + company +  "&desc=" + desc  + "&cms=" + cms + "&graphics=" + graphics 
         + "&host=" + host + "&domain=" + domain + "&ecomm=" + ecomm, 
         success : function(text){

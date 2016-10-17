@@ -10,7 +10,7 @@
 
     $.ajax({
         type: "POST",
-        url: "../awesomists/php/freelanmail.php",
+        url: "http://awesomists.com/php/freelanmail.php",
         data: "name=" + name +"&email=" + email + "&mobile=" + mobile + "&website=" + website + "&expertise=" + expertise + "&desc=" + desc, 
         success : function(text){
             if (text == "success"){
