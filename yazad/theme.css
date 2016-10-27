@@ -1,0 +1,185 @@
+/* ICONS  - Pallete colors: armygreen, black, blue, cherryred, cinnamon, darkblue, darkgray, gold, goldgreen, goldyellow, gray, green, lightblue, lightgray, maroonred, nectarine, orange, pink, red, salmonred, sand, skyblue, tan, white, yellow */
+@icon-swatch{
+  primary: white; secondary: lightblue; tertiary: darkgray; quaternary: lightblue;
+}
+
+
+.ct-ui-base {
+  color: #ffffff;
+}
+
+.ct-ui-base {
+    /* direction: ltr; */
+    opacity: 0;
+}
+
+/* LINKS */
+.ct-ui-link{
+  color: #1769C6;
+}
+
+/* PANE */
+.ct-ui-pane {}
+
+/* PANE ITEM */
+.ct-ui-pane-item {}
+
+
+/* HEADING BLOCK */
+.ct-ui-header-primary{
+  background-image: linear-gradient(bottom,#1769C6 25%,#0087CF 78%);
+  border: 0 solid #0F64BB;
+  border-radius: 0;
+}
+.ct-ui-header-secondary{
+  background-image: linear-gradient(bottom,#598803 25%,#6aa403 78%);
+  border: 0 solid;
+  border-radius: 0;
+}
+.ct-ui-header-tertiary{
+  background-image: linear-gradient(bottom,#e9f3fe 25%,#f1f7fd 78%);
+  border: 1px solid #E3E3E3;
+  color: #222;
+}
+.ct-ui-header-quaternary{
+  background-image: linear-gradient(bottom,#1769C6 25%,#0087CF 78%);
+  border-radius: 0 0 5px 5px;
+}
+
+
+
+/* INTERACTIVE STATES */
+.ct-ui-state-active{
+  background-image: linear-gradient(bottom,#FF7901 25%,#FF6728 78%);
+  color: #FFF;
+}
+.ct-ui-state-active a,.ct-ui-state-active span,.ct-ui-state-active em{
+  color: #FFF;
+}
+.ct-ui-state-highlight{
+  background: none repeat scroll 0 0 #FCEFA1;
+  color: #222;
+}
+a.ct-ui-state-highlight,span.ct-ui-state-highlight,em.ct-ui-state-highlight{
+  color: #222;
+}
+.ct-ui-state-hover{
+  background-image: linear-gradient(bottom,#FF7901 25%,#FF6728 78%);
+  color: #FFF;
+  box-shadow: 0 0 .2em #FFF inset;
+}
+.ct-ui-state-hover a,.ct-ui-state-hover span,.ct-ui-state-hover em{
+  color: #FFF;
+}
+
+
+
+/** BUTTON **/
+button.ct-ui-button{
+  background-image: linear-gradient(bottom,#598803 25%,#6aa403 78%);
+  border: 1px solid #5b880b;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: none;
+}
+button.ct-ui-button em{
+  text-shadow: #4c671d .1em .1em .05em;
+}
+
+
+
+/* PANE ITEM - CHANGE SEARCH */
+@icon-swatch div#ct_tmpl_layout_search{ /** Override default global icon swatch **/
+  secondary: darkgray;
+}
+div#ct_tmpl_layout_search{
+  background-color: #F8F8F8;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px 5px 5px 5px;
+}
+div#ct_tmpl_layout_search button{
+  background-image: linear-gradient(top,#fc8220 25%,#fc471d 92%);
+  border: 1px solid #e97c17;
+  border-radius: 6px;
+  box-shadow: 0 .1em .01em .01em #fbbea9 inset;
+}
+div#ct_tmpl_layout_search button: active{
+  background-image: linear-gradient(bottom,#fc471d 25%,#fc8220 92%);
+}
+div#ct_tmpl_layout_search button span{
+  text-shadow: 1px 1px .1em #a04605;
+}
+div#ct_tmpl_layout_change_search{
+  background-color: #dedede;
+  border: 1px solid #cecece;
+  margin: 0 0 5px;
+}
+div#ct_tmpl_layout_change_search button{
+  background-image: linear-gradient(bottom,#045fbc 25%,#0578ee 78%);
+  box-shadow: none;
+  border-radius: 5px;
+  border: none;
+}
+div#ct_tmpl_layout_change_search button em{
+  text-shadow: none;
+}
+
+
+
+/* PANE ITEM - FILTERS */
+@icon-swatch div#ct_tmpl_layout_filters { /** Override default global icon swatch **/
+
+}
+div#ct_tmpl_layout_filters{
+  background-color: #eaf3fe;
+  border: 1px solid #dbecfe;
+}
+div#ct_tmpl_layout_filters p.ct-ui-filter-legend{
+  border-top: 1px solid #FFF;
+  border-width: 1px 0 0;
+}
+div#ct_tmpl_layout_filters fieldset{
+  border-bottom: 1px solid #d0e4f7;
+}
+
+
+
+/* PANE ITEM - AVAILABILITY */
+@icon-swatch div#ct_tmpl_layout_availability { /** Override default global icon swatch **/
+  secondary: gray; tertiary: gold; 
+}
+div#ct_tmpl_layout_availability fieldset legend{
+  border-radius: 5px 5px 0 0;
+}
+div#ct_tmpl_layout_availability fieldset legend span{
+  text-shadow: #4c671d .1em .1em .05em;
+}
+div#ct_tmpl_layout_availability h1{
+  color: #056fdc;
+  font-size: 1.7em;
+}
+div#ct_tmpl_layout_availability h3{
+  color: #056fdc;
+}
+div#ct_tmpl_layout_availability h6{
+  color: #414141;
+}
+div#ct_tmpl_layout_availability label{
+  color: #222;
+}
+div#ct_tmpl_layout_availability h3.ct-ui-avail-car-rate-heading-label-first{
+  color: #000;
+}
+
+
+
+/* PANE ITEM - INCLUSIONS */
+@icon-swatch div#ct_tmpl_layout_inclusions { /** Override default global icon swatch **/
+
+}
+div#ct_tmpl_layout_inclusions{
+  background-color: #F3F3F3;
+  border: 3px solid #D5D5D5;
+}
+div#ct_tmpl_layout_inclusions_header{
+  background-color: #D5D5D5;
+}
