@@ -16,19 +16,22 @@
 
       }
       .appBar {
-        height: 60px;
+        /*height: 60px;*/
         /*position: fixed;*/
         /*background-color: #1A237E;*/
-        /*padding: 2px;*/
+        padding: 15px;
 
       }
-      .appBar>h2{
-        font-family: 'Alfa Slab One', cursive;
+      .appBar>img{
+        /*font-family: 'Alfa Slab One', cursive;
         font-size: 45px;
         color: white;
-        font-weight: 600;
-        text-align: center;
-        line-height: .5;
+        font-weight: 600;*/
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        /*text-align: center;
+        line-height: .5;*/
       }
       .navbar {
         position: relative;
@@ -57,6 +60,57 @@
         width: 40%;
         height: auto;
       }
+      .lang_curr_select {
+        width: 80%;
+        height: 45px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0);
+        margin-bottom: 15px;
+      }
+      .lang_curr_select select {
+        position: relative;
+        display: block;
+        min-width: 100%;
+        width: 100%;
+        padding-right: 45px;
+        padding-bottom: .25em;
+        font-family: 'Lato', sans-serif;
+        padding-top: .8em;
+        /*padding-left: 6px;*/
+        color: #ffffff;
+        border: 0;
+        background: transparent;
+        outline: 0;
+        -webkit-appearance: none;
+        z-index: 1;
+        cursor: pointer;
+        line-height: normal;
+        font-size: 13px;
+      }
+      #curr_lang {
+        margin-top: 50px;
+      }
+      .lang_curr_select select option{
+        color: #454545;
+      }
+      .lang_curr_select select:invalid { 
+        color: #a89f9f; 
+      }
+      .curr_lang_btn {
+        text-align: center;
+      }
+      #cur_lan_btn {
+        background: none;
+        color: #ffffff;
+        font-weight: 600;
+        width: 50%;
+        height: 40px;
+      }
+      #cur_lan_btn:hover {
+        background-color: #ffffff;
+        color: #0b6251;
+      }
     </style>
     <script type="text/javascript">
       window.onload = function() {
@@ -67,10 +121,12 @@
   <body>
     
     <div id="loader"></div>
+
     <div class="container-fluid">
       <div class="row navbar">
         <div class="col-md-12 appBar">
-          <h2>Lap5</h2>
+          <!-- <h2>Lap5</h2> -->
+          <img class="img-responsive" src="Lap5_Final_logo_RGB.png">
         </div>
       </div>
     </div>
@@ -81,76 +137,228 @@
         </div>
       </div>
     </div>
+
+    <div id="curr_lang">
+      <div class="container-fluid lang_curr_select">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <select required id="lang_select">
+                  <option value="" disabled selected>Select Language..</option>
+                  <option value="AR">Arabic</option>
+                  <option value="ZH-TW">Traditional Chinese</option>
+                  <option value="LV">Latvian</option>
+                  <option value="LT">Lithuanian</option>
+                  <option value="BR">Portuguese (Brazil)</option>
+                  <option value="TH">Thai</option>
+                  <option value="HR">Croatian</option>
+                  <option value="ZH">Simplified Chinese</option>
+                  <option value="RO">Romanian</option>
+                  <option value="TL">Filipino</option>
+                  <option value="CA">Catalan</option>
+                  <option value="VI">Vietnamese</option>
+                  <option value="TR">Turkish</option>
+                  <option value="NO">Norwegian</option>
+                  <option value="HU">Hungarian</option>
+                  <option value="BG">Bulgarian</option>
+                  <option value="FR">French</option>
+                  <option value="SV">Swedish</option>
+                  <option value="MK">Macedonian </option>
+                  <option value="FO">Faroese</option>
+                  <option value="ID">Indonesian</option>
+                  <option value="DE">German</option>
+                  <option value="ZH-HK">Chinese (Hong Kong)</option>
+                  <option value="FL">Flemish</option>
+                  <option value="FI">Finnish</option>
+                  <option value="KO">Korean</option>
+                  <option value="MX">Spanish (Mexico)</option>
+                  <option value="CS">Czech</option>
+                  <option value="IS">Icelandic</option>
+                  <option value="UK">Ukrainian</option>
+                  <option value="DA">Danish</option>
+                  <option value="IT">Italian</option>
+                  <option value="SR">Serbian</option>
+                  <option value="EN-US">American English</option>
+                  <option value="MS">Malay</option>
+                  <option value="PL">Polish</option>
+                  <option value="PT">Portuguese</option>
+                  <option value="EN">English</option>
+                  <option value="CH">Swiss</option>
+                  <option value="RU">Russian</option>
+                  <option value="ET">Estonian</option>
+                  <option value="ES">Spanish</option>
+                  <option value="NL">Dutch</option>
+                  <option value="JA">Japanese</option>
+                  <option value="EL">Greek</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid lang_curr_select">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <select required id="curr_select">
+                  <option value="" disabled selected>Select Currency..</option>
+                  <option value="AED">AED [AED]</option>
+                  <option value="BHD">BHD [BHD]</option>
+                  <option value="EGP">EGP [EGP]</option>
+                  <option value="JOD">JOD [JOD]</option>
+                  <option value="KWD">KWD [KWD]</option>
+                  <option value="LBP">LBP [LBP]</option>
+                  <option value="OMR">OMR [﷼]</option>
+                  <option value="SAR">SAR [﷼]</option>
+                  <option value="QAR">QAR [﷼]</option>
+                  <option value="EUR">EUR [€]</option>
+                  <option value="GBP">GBP [£]</option>
+                  <option value="USD">USD [$]</option>
+                  <option value="ARS">ARS [$]</option>
+                  <option value="BDT">BDT [Tk]</option>
+                  <option value="BGN">BGN [Лв]</option>
+                  <option value="BRL">BRL [R$]</option>
+                  <option value="CAD">CAD [$]</option>
+                  <option value="CHF">CHF [CHF]</option>
+                  <option value="CLP">CLP [$]</option>
+                  <option value="CNY">CNY [¥]</option>
+                  <option value="CRC">CRC [₡]</option>
+                  <option value="CZK">CZK [Kč]</option>
+                  <option value="DKK">DKK [kr]</option>
+                  <option value="FJD">FJD [$]</option>
+                  <option value="AUD">AUD [$]</option>
+                  <option value="GTQ">GTQ [Q]</option>
+                  <option value="HKD">HKD [HK$]</option>
+                  <option value="HUF">HUF [Ft]</option>
+                  <option value="IDR">IDR [Rp]</option>
+                  <option value="ILS">ILS [₪]</option>
+                  <option value="INR">INR [₨]</option>
+                  <option value="ISK">ISK [kr]</option>
+                  <option value="JPY">JPY [¥]</option>
+                  <option value="KES">KES [KSh]</option>
+                  <option value="KRW">KRW [₩]</option>
+                  <option value="LKR">LKR [₨]</option>
+                  <option value="MKD">MKD [ден]</option>
+                  <option value="MMK">MMK [K]</option>
+                  <option value="MOP">MOP [MOP$]</option>
+                  <option value="MXN">MXN [$]</option>
+                  <option value="MYR">MYR [RM]</option>
+                  <option value="NAD">NAD [$]</option>
+                  <option value="NGN">NGN [₦]</option>
+                  <option value="NOK">NOK [kr]</option>
+                  <option value="NZD">NZD [$]</option>
+                  <option value="PHP">PHP [₱]</option>
+                  <option value="PKR">PKR [₨]</option>
+                  <option value="PLN">PLN [zł]</option>
+                  <option value="RON">RON [Lei]</option>
+                  <option value="RSD">RSD [PCД]</option>
+                  <option value="RUB">RUB [₽]</option>
+                  <option value="SEK">SEK [kr]</option>
+                  <option value="SGD">SGD [$]</option>
+                  <option value="THB">THB [฿]</option>
+                  <option value="TRY">TRY [₺]</option>
+                  <option value="TWD">TWD [NT$]</option>
+                  <option value="TZS">TZS [TZS]</option>
+                  <option value="UAH">UAH [₴]</option>
+                  <option value="AZN">AZN [ман]</option>
+                  <option value="VND">VND [₫]</option>
+                  <option value="ZAR">ZAR [R]</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container-fluid curr_lang_btn">
+          <div class="row">
+            <div class="col-md-12">
+              <button type="button" id="cur_lan_btn" class="btn btn-default">GO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="abe_ABE">
-      
       <!-- <div id="loader">Loading the search</div> -->
       <noscript>YOUR BROWSER DOES NOT SUPPORT JAVASCRIPT</noscript>
     </div>
-    <div class="carSearch">
-      <script type="text/javascript">
-      var CT = {
+
+    <script type="text/javascript">
+      
+          var currency; 
+          var language;
+
+          $("#cur_lan_btn").click(function() {
+            var lang = document.getElementById("lang_select");
+            var language = lang.options[lang.selectedIndex].value;
+            var curr = document.getElementById("curr_select");
+            var currency = curr.options[curr.selectedIndex].value;
+            console.log(language);
+            console.log(currency);
+            main_func(language, currency);
+          });
+
+          var CT = {
             ABE: {
               Settings: {
                   events: [
                   {
-                      ready: function() {
-                        console.log("Getting ready");
-                          // $('#loader').css("display","block");
-                          // var myElement = document.querySelector("#loader");
-                          // myElement.style.display = "block";
-                      }
+                    ready: function() {
+                      console.log("Getting ready");
+                        $("#curr_lang").css("display", "none");
+                    }
                   },
                   {
-                      step1: function(e, obj, $) {
-                          console.log("I am in step 1");
-                          switch (obj.process) {
-                            case 'start':
-                                   console.log("Start");
-                                    break;
-                            case 'prerender':
-                                    console.log("prerender");
-                                    break;
-                            case 'render':
-                                    console.log("render");
-                                    break;
-                            case 'postrender':
-                                    console.log("postrender");
-                                    break;
-                            case 'success':
-                                    console.log("success");
-                                    break;
-                        }
-                          // var myElement = document.querySelector("#loader");
-                          // myElement.style.display = "none";
+                    step1: function(e, obj, $) {
+                      console.log("I am in step 1");
+                      switch (obj.process) {
+                        case 'start':
+                               console.log("Start");
+                                break;
+                        case 'prerender':
+                                console.log("prerender");
+                                break;
+                        case 'render':
+                                console.log("render");
+                                break;
+                        case 'postrender':
+                                console.log("postrender");
+                                break;
+                        case 'success':
+                                console.log("success");
+                                break;
                       }
+                        // var myElement = document.querySelector("#loader");
+                        // myElement.style.display = "none";
+                    }
                   },
                   {
-                      step2: function(e, obj, $) {
-                          console.log("I am in step 2");
-                          switch (obj.process) {
-                            case 'start':
-                                // Do something...
-                                break;
-                            case 'startavail':
-                                // Do something...
-                                break;
-                            case 'render':
-                                $('.taxi').css("display","none");
-                                $('.appBar h2').css({'font-size':'40px'});
-                                $('.appBar').css({'height':'0px'});
-                                $('.navbar').css({'top':'0px'});
-                                break;
-                            case 'success':
-                                // Do something...
-                                break;
-                            case 'progressbar':
-                                // Do something...
-                                break;
-                            case 'nocar':
-                                // Do something...
-                                break;
-                          }  
-                      }
+                    step2: function(e, obj, $) {
+                      console.log("I am in step 2");
+                      switch (obj.process) {
+                        case 'start':
+                            // Do something...
+                            break;
+                        case 'startavail':
+                            // Do something...
+                            break;
+                        case 'render':
+                            $('.taxi').css("display","none");
+                            $('.appBar h2').css({'font-size':'40px'});
+                            $('.appBar').css({'height':'0px'});
+                            $('.navbar').css({'top':'0px'});
+                            break;
+                        case 'success':
+                            // Do something...
+                            break;
+                        case 'progressbar':
+                            // Do something...
+                            break;
+                        case 'nocar':
+                            // Do something...
+                            break;
+                      }  
+                    }
                   }
                 ],
                 proxyURL: 'otaproxy.php',
@@ -165,9 +373,9 @@
                     style_path: "./css/",
                   } 
                 ],
-                currency: 'EUR',
-                language: 'EN',
-                residenceID: 'IE',
+                // currency: currency,
+                // language: language,
+                // residenceID: 'IE',
                 theme:  {
                   primary: '#0b6251', // e.g #0000FF
                   secondary: '#0b6251', // e.g #FF0000
@@ -176,14 +384,18 @@
               }
             }
           };
-     
-        (function() {
-          CT.ABE.Settings.version = '4.0';
-          var cts = document.createElement('script'); cts.type = 'text/javascript'; cts.async = true;
-          cts.src = '//ajaxgeo.cartrawler.com/abe' + CT.ABE.Settings.version + '/ct_loader.js?' + new Date().getTime();
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cts, s);
-        })();
-      </script>
-     </div>
+   
+          function main_func(language, currency) {
+            CT.ABE.Settings.version = '4.0';
+            CT.ABE.Settings.currency = currency;
+            CT.ABE.Settings.language = language;
+
+            var cts = document.createElement('script'); cts.type = 'text/javascript'; cts.async = true;
+            cts.src = '//ajaxgeo.cartrawler.com/abe' + CT.ABE.Settings.version + '/ct_loader.js?' + new Date().getTime();
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cts, s);
+          }
+ 
+          // main_func();
+    </script>
   </body>
 </html>

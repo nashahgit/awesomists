@@ -66,9 +66,12 @@ body {
 .ct-form-field i[class^="ct-icon-"], .ct-form-field i[class*=" ct-icon-"] {
   line-height: 1.3;
 }
+#ui-datepicker-div {
+  width: auto;
+}
 .ui-datepicker {
-  width: 100%;
-  overflow: hidden;
+  width: auto;
+  overflow-x: hidden;
 }
 .ui-datepicker.ui-datepicker-multi-2 .ui-datepicker-group {
     width: 100%;
