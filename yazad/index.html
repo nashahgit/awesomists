@@ -10,7 +10,7 @@
       body {
         color: #000000;
         overflow-x: hidden;
-        background-color: rgb(11, 98, 81);
+        background-color: #0971b6; /* rgb(11, 98, 81); */
       }
       .fix-it {
 
@@ -22,12 +22,12 @@
         padding: 15px;
 
       }
-      .appBar>img{
+      .appBar img{
         /*font-family: 'Alfa Slab One', cursive;
         font-size: 45px;
         color: white;
         font-weight: 600;*/
-        width: 60%;
+        width: 65%;
         height: auto;
         margin: 0 auto;
         /*text-align: center;
@@ -36,9 +36,11 @@
       .navbar {
         position: relative;
         top: 20px;
+        height: 75px;
         width: 100%;
-        border: 0px solid transparent;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
         z-index: 9;
+        background-color: #0971b6;
       }
       /*#abe_ABE {
         margin-top: 65px;
@@ -53,7 +55,7 @@
         z-index: 9999;
         background: url(poi.svg) center no-repeat #fff;
         background-size: 20% auto;
-        background-color: #0b6251;
+        background-color: #0971b6;
       }
       .taxi img {
         margin: 0 auto;
@@ -64,7 +66,7 @@
         width: 80%;
         height: 45px;
         border: 1px solid #ffffff;
-        border-radius: 10px;
+        border-radius: 4px;
         background: rgba(255, 255, 255, 0);
         margin-bottom: 15px;
       }
@@ -85,7 +87,7 @@
         -webkit-appearance: none;
         z-index: 1;
         cursor: pointer;
-        line-height: normal;
+        line-height: 1.7;
         font-size: 13px;
       }
       #curr_lang {
@@ -109,7 +111,14 @@
       }
       #cur_lan_btn:hover {
         background-color: #ffffff;
-        color: #0b6251;
+        color: #0971b6;
+      }
+      #back_home {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        z-index: 10;
+        display: none;
       }
     </style>
     <script type="text/javascript">
@@ -119,14 +128,16 @@
     </script>
   </head>
   <body>
-    
     <div id="loader"></div>
 
     <div class="container-fluid">
       <div class="row navbar">
+        <div id="back_home">
+          <a href="http://192.168.1.102/awesomists/yazad/"><img src="back.png"></a>
+        </div>
         <div class="col-md-12 appBar">
           <!-- <h2>Lap5</h2> -->
-          <img class="img-responsive" src="Lap5_Final_logo_RGB.png">
+          <img class="img-responsive" src="Lap5_Final_logo_main_web_2.png">
         </div>
       </div>
     </div>
@@ -144,12 +155,18 @@
           <div class="col-md-12">
             <form>
               <select required id="lang_select">
-                  <option value="" disabled selected>Select Language..</option>
+                  <option value="" disabled >Select Language..</option>
                   <option value="AR">Arabic</option>
+                  <option value="EN-US">American English</option>
+                  <option value="EN" selected>English</option>
                   <option value="ZH-TW">Traditional Chinese</option>
+                  <option value="ZH-HK">Chinese (Hong Kong)</option>
+                  <option value="BR">Portuguese (Brazil)</option>
+                  <option value="PT">Portuguese</option>
+                  <option value="MX">Spanish (Mexico)</option>
+                  <option value="ES">Spanish</option>
                   <option value="LV">Latvian</option>
                   <option value="LT">Lithuanian</option>
-                  <option value="BR">Portuguese (Brazil)</option>
                   <option value="TH">Thai</option>
                   <option value="HR">Croatian</option>
                   <option value="ZH">Simplified Chinese</option>
@@ -167,26 +184,20 @@
                   <option value="FO">Faroese</option>
                   <option value="ID">Indonesian</option>
                   <option value="DE">German</option>
-                  <option value="ZH-HK">Chinese (Hong Kong)</option>
                   <option value="FL">Flemish</option>
                   <option value="FI">Finnish</option>
                   <option value="KO">Korean</option>
-                  <option value="MX">Spanish (Mexico)</option>
                   <option value="CS">Czech</option>
                   <option value="IS">Icelandic</option>
                   <option value="UK">Ukrainian</option>
                   <option value="DA">Danish</option>
                   <option value="IT">Italian</option>
                   <option value="SR">Serbian</option>
-                  <option value="EN-US">American English</option>
                   <option value="MS">Malay</option>
                   <option value="PL">Polish</option>
-                  <option value="PT">Portuguese</option>
-                  <option value="EN">English</option>
                   <option value="CH">Swiss</option>
                   <option value="RU">Russian</option>
                   <option value="ET">Estonian</option>
-                  <option value="ES">Spanish</option>
                   <option value="NL">Dutch</option>
                   <option value="JA">Japanese</option>
                   <option value="EL">Greek</option>
@@ -200,7 +211,7 @@
           <div class="col-md-12">
             <form>
               <select required id="curr_select">
-                  <option value="" disabled selected>Select Currency..</option>
+                  <option value="" disabled >Select Currency..</option>
                   <option value="AED">AED [AED]</option>
                   <option value="BHD">BHD [BHD]</option>
                   <option value="EGP">EGP [EGP]</option>
@@ -212,7 +223,7 @@
                   <option value="QAR">QAR [﷼]</option>
                   <option value="EUR">EUR [€]</option>
                   <option value="GBP">GBP [£]</option>
-                  <option value="USD">USD [$]</option>
+                  <option value="USD" selected>USD [$]</option>
                   <option value="ARS">ARS [$]</option>
                   <option value="BDT">BDT [Tk]</option>
                   <option value="BGN">BGN [Лв]</option>
@@ -280,6 +291,33 @@
 
     <div id="abe_ABE">
       <!-- <div id="loader">Loading the search</div> -->
+      <!--  Temporary Css -->
+      <style type="text/css">
+
+       /* #ct_s1_search_button {
+            background: rgba(11, 98, 81, 0);
+            border-color: #FFFFFF;
+        }
+        #ct_booking_summary_form #ct_s2_search_button {
+            background: #0971b6;
+        }
+        #ct_booking_summary_form #ct_s3_search_button {
+            background: #0971b6;
+        }
+        #ct_box_DriversDetails .ct-form-field .ct-input {
+            height: 45px;
+            border-radius: 10px;
+            border: 1px solid #0971b6;
+            background: rgb(11, 98, 81,0);
+            color: #0971b6;
+        }
+        #ct_box_DriversDetails .ct-form-field .ct-palette-d-color-darken {
+            color: #0971b6;
+        }*/
+        #ui-datepicker-div {
+          left: 0px !important;
+        }
+      </style>
       <noscript>YOUR BROWSER DOES NOT SUPPORT JAVASCRIPT</noscript>
     </div>
 
@@ -305,7 +343,8 @@
                   {
                     ready: function() {
                       console.log("Getting ready");
-                        $("#curr_lang").css("display", "none");
+                      $("#curr_lang").css("display", "none");
+
                     }
                   },
                   {
@@ -346,7 +385,13 @@
                             $('.taxi').css("display","none");
                             $('.appBar h2').css({'font-size':'40px'});
                             $('.appBar').css({'height':'0px'});
-                            $('.navbar').css({'top':'0px'});
+                            $('.navbar').css({'top':'0px',
+                                              'position':'fixed',
+                                              '-webkit-box-shadow':'0px 1px 5px 0px rgba(0,0,0,0.75)',
+                                              '-moz-box-shadow':'0px 1px 5px 0px rgba(0,0,0,0.75)',
+                                              'box-shadow':'0px 1px 5px 0px rgba(0,0,0,0.75)'});
+                            $('#back_home').css({'display':'block'});
+                            $('#abe_ABE').css({'margin-top':'75px'});
                             break;
                         case 'success':
                             // Do something...
@@ -377,9 +422,9 @@
                 // language: language,
                 // residenceID: 'IE',
                 theme:  {
-                  primary: '#0b6251', // e.g #0000FF
-                  secondary: '#0b6251', // e.g #FF0000
-                  complimentary: '#0b6251' // e.g #000000
+                  primary: '#0971b6', // e.g #0000FF
+                  secondary: '#0971b6', // e.g #FF0000
+                  complimentary: '#0971b6' // e.g #000000 #0b6251
                 }
               }
             }
