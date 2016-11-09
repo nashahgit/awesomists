@@ -109,10 +109,10 @@
         width: 50%;
         height: 40px;
       }
-      #cur_lan_btn:hover {
+      /*#cur_lan_btn:hover {
         background-color: #ffffff;
         color: #0971b6;
-      }
+      }*/
       #back_home {
         position: absolute;
         top: 20px;
@@ -341,29 +341,6 @@
       <!--  Temporary Css -->
       <style type="text/css">
 
-       /* #ct_s1_search_button {
-            background: rgba(11, 98, 81, 0);
-            border-color: #FFFFFF;
-        }
-        #ct_booking_summary_form #ct_s2_search_button {
-            background: #0971b6;
-        }
-        #ct_booking_summary_form #ct_s3_search_button {
-            background: #0971b6;
-        }
-        #ct_box_DriversDetails .ct-form-field .ct-input {
-            height: 45px;
-            border-radius: 10px;
-            border: 1px solid #0971b6;
-            background: rgb(11, 98, 81,0);
-            color: #0971b6;
-        }
-        #ct_box_DriversDetails .ct-form-field .ct-palette-d-color-darken {
-            color: #0971b6;
-        }*/
-        #ui-datepicker-div {
-          left: 0px !important;
-        }
       </style>
       <noscript>YOUR BROWSER DOES NOT SUPPORT JAVASCRIPT</noscript>
     </div>
@@ -378,6 +355,7 @@
             var language = lang.options[lang.selectedIndex].value;
             var curr = document.getElementById("curr_select");
             var currency = curr.options[curr.selectedIndex].value;
+            $(this).css({'background-color':'#ffffff','color':'#0971b6'});
             console.log(language);
             console.log(currency);
             main_func(language, currency);
