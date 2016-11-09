@@ -126,20 +126,21 @@
         $("#loader").fadeOut("slow");
 
         var key_val = {
-          "BH" : {"country":"BH","currency":"BHD"},
-          "EG" : {"country":"EG","currency":"EGP"},
-          "JO" : {"country":"JO","currency":"JOD"},
-          "KW" : {"country":"KW","currency":"KWD"},
-          "LB" : {"country":"LB","currency":"LBP"},
-          "LY" : {"country":"LY","currency":"LYD"},
-          "MA" : {"country":"MA","currency":"MAD"},
-          "OM" : {"country":"OM","currency":"OMR"},
-          "QA" : {"country":"QA","currency":"QAR"},
-          "SA" : {"country":"SA","currency":"SAR"},
-          "SY" : {"country":"SY","currency":"SYP"},
-          "TN" : {"country":"TN","currency":"TND"},
-          "AE" : {"country":"AE","currency":"AED"},
-          "YE" : {"country":"YE","currency":"ZMW"}
+          "BH" : {"country":"BH","currency":"BHD","language":"AR"},
+          "EG" : {"country":"EG","currency":"EGP","language":"AR"},
+          "JO" : {"country":"JO","currency":"JOD","language":"AR"},
+          "KW" : {"country":"KW","currency":"KWD","language":"AR"},
+          "LB" : {"country":"LB","currency":"LBP","language":"AR"},
+          "LY" : {"country":"LY","currency":"LYD","language":"AR"},
+          "MA" : {"country":"MA","currency":"MAD","language":"AR"},
+          "OM" : {"country":"OM","currency":"OMR","language":"AR"},
+          "QA" : {"country":"QA","currency":"QAR","language":"AR"},
+          "SA" : {"country":"SA","currency":"SAR","language":"AR"},
+          "SY" : {"country":"SY","currency":"SYP","language":"AR"},
+          "TN" : {"country":"TN","currency":"TND","language":"AR"},
+          "AE" : {"country":"AE","currency":"AED","language":"AR"},
+          "YE" : {"country":"YE","currency":"ZMW","language":"AR"},
+          "IN" : {"country":"IN","currency":"INR","language":"EN"}
         }
 
         var country_code;
@@ -158,8 +159,9 @@
               if(key_val[i].country === country_code) {
                   // console.log(key_val[i].currency);
                 curr_code = key_val[i].currency;
+                lang_code = key_val[i].language;
                 $('#curr_select option[value=' + curr_code + ']').attr("selected","selected");
-                $('#lang_select option[value="AR"]').attr("selected","selected");
+                $('#lang_select option[value=' + lang_code + ']').attr("selected","selected");
               }
               else {
                 $('#curr_select option[value="USD"]').attr("selected","selected");
