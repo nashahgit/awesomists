@@ -11,6 +11,8 @@
         color: #000000;
         overflow-x: hidden;
         background-color: #0971b6; /* rgb(11, 98, 81); */
+        background: -webkit-linear-gradient(to left, #0971b6, #007e56); 
+        background: linear-gradient(to left, #0971b6, #007e56);
       }
       .fix-it {
 
@@ -40,7 +42,9 @@
         width: 100%;
         border-bottom: 1px solid rgba(0, 0, 0, 0);
         z-index: 9;
-        background-color: #0971b6;
+        background-color: #0971b6; /* rgb(11, 98, 81); */
+        background: -webkit-linear-gradient(to left, #0971b6, #007e56); 
+        background: linear-gradient(to left, #0971b6, #007e56);
       }
       /*#abe_ABE {
         margin-top: 65px;
@@ -56,6 +60,15 @@
         background: url(poi.svg) center no-repeat #fff;
         background-size: 20% auto;
         background-color: #0971b6;
+      }
+      #pls_wait {
+        /*position: absolute;*/
+        margin-top: 75px;
+        display: none;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
       }
       .taxi img {
         margin: 0 auto;
@@ -176,7 +189,6 @@
   </head>
   <body>
     <div id="loader"></div>
-
     <div class="container-fluid">
       <div class="row navbar">
         <div id="back_home">
@@ -338,9 +350,14 @@
 
     <div id="abe_ABE">
       <!-- <div id="loader">Loading the search</div> -->
+         <div id="pls_wait">Please Wait...</div>
+
       <!--  Temporary Css -->
       <style type="text/css">
-
+        #ct_s1_search_button {
+            background-color: rgba(11, 98, 81, 0) !important;
+            border-color: #FFFFFF;
+        }
       </style>
       <noscript>YOUR BROWSER DOES NOT SUPPORT JAVASCRIPT</noscript>
     </div>
@@ -356,9 +373,9 @@
             var curr = document.getElementById("curr_select");
             var currency = curr.options[curr.selectedIndex].value;
             $(this).css({'background-color':'#ffffff','color':'#0971b6'});
-            console.log(language);
-            console.log(currency);
             main_func(language, currency);
+            $("#curr_lang").css("display", "none");
+            $("#pls_wait").css({'display': 'block'})
           });
 
           var CT = {
@@ -367,29 +384,28 @@
                   events: [
                   {
                     ready: function() {
-                      console.log("Getting ready");
-                      $("#curr_lang").css("display", "none");
-
+                      // console.log("Getting ready");
                     }
                   },
                   {
                     step1: function(e, obj, $) {
-                      console.log("I am in step 1");
+                      // console.log("I am in step 1");
+                      $("#pls_wait").css({'display': 'none'})
                       switch (obj.process) {
                         case 'start':
-                               console.log("Start");
+                               // console.log("Start");
                                 break;
                         case 'prerender':
-                                console.log("prerender");
+                                // console.log("prerender");
                                 break;
                         case 'render':
-                                console.log("render");
+                                // console.log("render");
                                 break;
                         case 'postrender':
-                                console.log("postrender");
+                                // console.log("postrender");
                                 break;
                         case 'success':
-                                console.log("success");
+                                // console.log("success"); 
                                 break;
                       }
                         // var myElement = document.querySelector("#loader");
@@ -398,7 +414,7 @@
                   },
                   {
                     step2: function(e, obj, $) {
-                      console.log("I am in step 2");
+                      // console.log("I am in step 2");
                       switch (obj.process) {
                         case 'start':
                             // Do something...
