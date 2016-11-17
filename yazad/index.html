@@ -133,6 +133,11 @@
         z-index: 10;
         display: none;
       }
+      /*@media (min-width:767px) {
+        .appBar img{
+          width: 30%;
+        }
+      }*/
     </style>
     <script type="text/javascript">
       window.onload = function() {
@@ -173,12 +178,15 @@
                   // console.log(key_val[i].currency);
                 curr_code = key_val[i].currency;
                 lang_code = key_val[i].language;
-                $('#curr_select option[value=' + curr_code + ']').attr("selected","selected");
-                $('#lang_select option[value=' + lang_code + ']').attr("selected","selected");
+                $('#curr_select option[value="Select-Curr"]').prop("selected",false);
+                $('#lang_select option[value="Select-Lang"]').prop("selected",false);
+
+                $('#curr_select option[value=' + curr_code + ']').prop("selected",true);
+                $('#lang_select option[value=' + lang_code + ']').prop("selected",true);
               }
               else {
-                $('#curr_select option[value="USD"]').attr("selected","selected");
-                $('#lang_select option[value="EN"]').attr("selected","selected");
+                $('#curr_select option[value="USD"]').prop("selected",true);
+                $('#lang_select option[value="EN"]').prop("selected",true);
               }
           }); 
         }
@@ -214,8 +222,8 @@
           <div class="col-md-12">
             <form>
               <select required id="lang_select">
-                  <option value="" disabled selected>Select Language..</option>
-                  <option value="AR">Arabic</option>
+                  <option value="Select-Lang" disabled selected>Select Language..</option>
+                  <option value="AR" >Arabic</option>
                   <option value="EN-US">American English</option>
                   <option value="EN">English</option>
                   <option value="ZH-TW">Traditional Chinese</option>
@@ -270,7 +278,7 @@
           <div class="col-md-12">
             <form>
               <select required id="curr_select">
-                  <option value="" disabled selected>Select Currency..</option>
+                  <option value="Select-Curr" disabled selected>Select Currency..</option>
                   <option value="AED">AED [AED]</option>
                   <option value="BHD">BHD [BHD]</option>
                   <option value="EGP">EGP [EGP]</option>
