@@ -70,6 +70,7 @@
         font-family: 'Lato', sans-serif;
         font-size: 18px;
       }
+
       .taxi img {
         margin: 0 auto;
         width: 40%;
@@ -133,11 +134,54 @@
         z-index: 10;
         display: none;
       }
-      /*@media (min-width:767px) {
+      @media (min-width:421px) and (max-width:570px) {
         .appBar img{
-          width: 30%;
+          width: 50%;
         }
-      }*/
+        .taxi {
+          margin-top: 20px;
+        }
+      }
+      @media (min-width:571px) and (max-width:650px) {
+        .appBar img{
+          width: 48%;
+        }
+        .taxi {
+          margin-top: 20px;
+        }
+      }
+      @media (min-width:651px) and (max-width:768px) {
+        .appBar img{
+          width: 35%;
+        }
+        .taxi {
+          margin-top: 20px;
+        }
+      }
+      @media (min-width:769px) and (max-width: 800px) {
+        .appBar img{
+          width: 35%;
+        }
+        .taxi {
+          margin-top: 35px;
+        }
+      }
+      @media (min-width:801px) and (max-width: 880px) {
+        .appBar img{
+          width: 35%;
+        }
+        .taxi {
+          margin-top: 40px;
+        }
+      }
+      @media (min-width:881px) and (max-width: 1080px) {
+        .appBar img{
+          width: 28%;
+        }
+        .taxi {
+          margin-top: 40px;
+        }
+      }
     </style>
     <script type="text/javascript">
       window.onload = function() {
@@ -425,21 +469,21 @@
                       // console.log("I am in step 2");
                       switch (obj.process) {
                         case 'start':
+                            $('.taxi').css("display","none");
+                            $('#back_home').css({'display':'block'});
                             // Do something...
                             break;
                         case 'startavail':
                             // Do something...
                             break;
                         case 'render':
-                            $('.taxi').css("display","none");
                             $('.appBar h2').css({'font-size':'40px'});
-                            $('.appBar').css({'height':'0px'});
+                            $('.appBar').css({'height':'auto'});
                             $('.navbar').css({'top':'0px',
                                               'position':'fixed',
                                               '-webkit-box-shadow':'0px 1px 5px 0px rgba(0,0,0,0.75)',
                                               '-moz-box-shadow':'0px 1px 5px 0px rgba(0,0,0,0.75)',
                                               'box-shadow':'0px 1px 5px 0px rgba(0,0,0,0.75)'});
-                            $('#back_home').css({'display':'block'});
                             $('#abe_ABE').css({'margin-top':'75px'});
                             break;
                         case 'success':
