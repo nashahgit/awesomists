@@ -29,31 +29,31 @@ body {
     height: inherit;
 }
 .ct-ui-base h4 {
-    color: #f5f5f5;
+    color: #000080;
 }
 #ct_s1_frm_search .ct-form-field .ct-input {
     height: 45px;
     border-radius: 5px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #000080;
     background: rgba(255, 255, 255, 0);
-    color: #ffffff;
+    color: #000080;
 }
 #ct_s1_search_button {
-  background-color: rgba(11, 98, 81, 0);
+  background-color: #000080;
   border-color: #FFFFFF;
 }
 #ct_s1_pickup_date_cal {
-  color: #FFFFFF !important;
+  color: #000080 !important;
 }
 #ct_s1_dropoff_date_cal {
-  color: #FFFFFF !important;
+  color: #000080 !important;
 }
 }
 .ct-form-field .ct-checkbox.ct-small span {
-    color: #FFFFFF;
+    color: #000080;
 }
 .ct-form-field .ct-checkbox {
-    color: #ffffff;
+    color: #000080;
 }
 /*.ct-palette-s-color {
     color: #FFFFFF !important;
@@ -76,7 +76,7 @@ body {
 .ct-select {
   font-family: 'Lato', sans-serif;
   height: 45px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000080;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0);
   webkit-box-shadow: 0px 0px 0em rgba(252, 250, 250, 0) inset;
@@ -91,12 +91,12 @@ body {
 }
 .ct-select:after {
   background-image: none;
-  background-color: rgba(240, 248, 255, 0);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000080;
 }
 .ct-palette-d-color-darken {
   font-family: 'Lato', sans-serif;
-  color: #ffffff;
+  color: #000080;
 }
 #ct-ui-breadcrumbs {
   background-color: #6973e1;
@@ -105,7 +105,7 @@ body {
   background-color: #1a237e;
 }
 #ct_step2 aside#ct_s2_side_panel div#ct_booking_summary_form i#ct_toggle_booking_summary_form {
-  color: #FFFFFF;
+  color: #000080;
   font-family: 'Lato', sans-serif;
 }
 .ct-box {
@@ -129,7 +129,7 @@ body {
   top: 50px;
 }
 .ct-car-rate-btn {
-  background: #0971b6;
+  background: #000080;
   color: #1A237E;
   font-family: 'Lato', sans-serif;
   box-shadow: 3px 3px rgba(59, 58, 56, 0);
@@ -137,97 +137,97 @@ body {
 }
 #ct_step2 #ct_filters_mobile ul ul.ct_filters_checkbox_container li .ct_filter_label i.ct-icon-checkmark-square-empty, 
 #ct_step2 #ct_filters_mobile ul ul.ct_filters_checkbox_container li .ct_filter_label i.ct-icon-checkmark-square {
-  color: #0971b6;
+  color: #000080;
 }
 #ct_step2 #ct_filters_mobile ul ul.ct_filters_checkbox_container li .ct_filter_label label .ct_filter_value_name {
-  color: #0971b6;
+  color: #000080;
 }
 .ct_filter_curreny_button .ct-select {
-  border: 1px solid #0971b6;
+  border: 1px solid #000080;
   height: 40px;
   border-radius: 0px;
 }
 .ct_filter_curreny_button .ct-select select{
-  color: #0971b6;
+  color: #000080;
 }
 .ct_filter_curreny_button .ct-select:after {
-  color: #0971b6;
+  color: #000080;
 }
 #ct_box_DriversDetails .ct-form-field .ct-input {
     height: 45px;
     border-radius: 5px;
-    border: 1px solid #0971b6;
+    border: 1px solid #000080;
     background: rgb(11, 98, 81,0);
-    color: #0971b6;
+    color: #000080;
 }
 #ct_box_DriversDetails .ct-form-field .ct-palette-d-color-darken {
-    color: #0971b6;
+    color: #000080;
 }
 #ct_box_DriversDetails .ct-select {
-  border: 1px solid #0971b6;
+  border: 1px solid #000080;
 }
 #ct_s2_frm_search .ct-form-field .ct-input {
   height: 45px;
   border-radius: 5px;
-  border: 1px solid #0971b6;
+  border: 1px solid #000080;
   background: rgba(255, 255, 255, 0);
-  color: #0971b6;
+  color: #000080;
 }
 #ct_step3 section#ct_s3_body_panel #ct_box_ExcessCover #ct_s3_Insurance_check .ct-form-row {
-  background-color: #0971b6;
+  background-color: #000080;
 }
 #ct_s3_Insurance_check .ct-form-row .ct-form-field i[class^="ct-icon-"] {
   line-height: 2.4;
 }
 .ct-ui-frm-step2.ct-ui-booking-summary .ct-select {
-  border: 1px solid #0971b6;
+  border: 1px solid #000080;
 }
 .ct-ui-frm-step2.ct-ui-booking-summary .ct-select:after {
-  color: #0971b6;
+  color: #000080;
 }
 .ct-ui-frm-step2.ct-ui-booking-summary .ct-select select{
-  color: #0971b6;
+  color: #000080;
 }
 #ct_s3_frm_search .ct-form-field .ct-input {
   height: 45px;
   border-radius: 5px;
-  border: 1px solid #0971b6;
+  border: 1px solid #000080;
   background: rgba(255, 255, 255, 0);
-  color: #0971b6;
+  color: #000080;
 }
 .ct-ui-frm-step3.ct-ui-booking-summary .ct-select select{
-  color: #0971b6;
+  color: #000080;
 }
 .ct-ui-frm-step3.ct-ui-booking-summary .ct-select {
-  border: 1px solid #0971b6;
+  border: 1px solid #000080;
 }
 #ct_booking_summary_form #ct_s3_search_button {
-  background: #0971b6;
+  background: #000080;
 }
 #ct_newsletter_label {
-  color: #0971b6; 
+  color: #000080; 
 }
 select#ct_phone_area_code {
-  color: #0971b6;
+  color: #000080;
 }
 .ct-iscroll-next {
-  color: #0971b6;
+  color: #000080;
 }
 #ct_booking_summary_form #ct_s2_search_button {
-  background: #0971b6;
+  background: #000080;
 }
 .ct-multi-step-nav-block .ct-multi-step-btn {
   color: #ffffff !important;
-
+  font-size: 20px;
 }
 #ct_search_again {
-  background: #0971b6;
+  background: #000080;
 }
 .ct-modal-scrollable h4 {
-  color: #0971b6;
+  color: #000080;
 }
 #ct_s2_body_panel .ct-iscroll-next {
-  color: #0971b6;
+  color: #000080;
 }
 #ct_toggle_booking_summary {
   font-size: 15px;

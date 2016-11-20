@@ -10,9 +10,9 @@
       body {
         color: #000000;
         overflow-x: hidden;
-        background-color: #0971b6; /* rgb(11, 98, 81); */
-        background: -webkit-linear-gradient(to left, #0971b6, #007e56); 
-        background: linear-gradient(to left, #0971b6, #007e56);
+        background-color: #FFFFFF; /* rgb(11, 98, 81); */
+        /*background: -webkit-linear-gradient(to left, #0971b6, #007e56); 
+        background: linear-gradient(to left, #0971b6, #007e56);*/
       }
       .fix-it {
 
@@ -42,9 +42,9 @@
         width: 100%;
         border-bottom: 1px solid rgba(0, 0, 0, 0);
         z-index: 9;
-        background-color: #0971b6; /* rgb(11, 98, 81); */
-        background: -webkit-linear-gradient(to left, #0971b6, #007e56); 
-        background: linear-gradient(to left, #0971b6, #007e56);
+        background-color: #FFFFFF; /* rgb(11, 98, 81); */
+        /*background: -webkit-linear-gradient(to left, #0971b6, #007e56); 
+        background: linear-gradient(to left, #0971b6, #007e56);*/
       }
       /*#abe_ABE {
         margin-top: 65px;
@@ -59,18 +59,21 @@
         z-index: 9999;
         background: url(poi.svg) center no-repeat #fff;
         background-size: 20% auto;
-        background-color: #0971b6;
+        background-color: #7fbb00;
       }
       #pls_wait {
         /*position: absolute;*/
         margin-top: 75px;
         display: none;
         text-align: center;
-        color: #ffffff;
+        color: #000080;
         font-family: 'Lato', sans-serif;
         font-size: 18px;
       }
-
+      .taxi {
+        width: 50px;
+        height: 20px;
+      }
       .taxi img {
         margin: 0 auto;
         width: 40%;
@@ -79,7 +82,7 @@
       .lang_curr_select {
         width: 80%;
         height: 45px;
-        border: 1px solid #ffffff;
+        border: 1px solid #000080;
         border-radius: 4px;
         background: rgba(255, 255, 255, 0);
         margin-bottom: 15px;
@@ -94,7 +97,7 @@
         font-family: 'Lato', sans-serif;
         padding-top: .8em;
         /*padding-left: 6px;*/
-        color: #ffffff;
+        color: #000080;
         border: 0;
         background: transparent;
         outline: 0;
@@ -117,26 +120,34 @@
         text-align: center;
       }
       #cur_lan_btn {
-        background: none;
+        background-color: #000080;;
         color: #ffffff;
         font-weight: 600;
         width: 50%;
         height: 40px;
+        border-color: #000080;
       }
       /*#cur_lan_btn:hover {
         background-color: #ffffff;
         color: #0971b6;
       }*/
-      #back_home {
+      .back_home {
         position: absolute;
         top: 20px;
         left: 15px;
         z-index: 10;
-        display: none;
+        /*display: none;*/
+      }
+      #back_to_home {
+        display : none;
+      }
+      #back_to_step2 {
+        display : none;
       }
       @media (min-width:421px) and (max-width:570px) {
         .appBar img{
           width: 50%;
+          margin-top: 2px;
         }
         .taxi {
           margin-top: 45px;
@@ -148,6 +159,7 @@
         }
         .taxi {
           margin-top: 50px;
+          margin-top: 2px;
         }
       }
       @media (min-width:651px) and (max-width:768px) {
@@ -243,19 +255,22 @@
     <div id="loader"></div>
     <div class="container-fluid">
       <div class="row navbar">
-        <div id="back_home">
-          <a href="http://awesomists.com/yazad/"><img src="back.png"></a>
+        <div class="back_home" id="back_to_home">
+          <a href="http://localhost/awesomists/yazad/"><img src="back_32_32.png"></a>
         </div>
+       <!--  <div class="back_home" id="back_to_step2">
+          <a href="#" onclick="javascript:abeHistory.selectStep('book')"><img src="back_32_32.png"></a>
+        </div> -->
         <div class="col-md-12 appBar">
           <!-- <h2>Lap5</h2> -->
-          <img class="img-responsive" src="Lap5_Final_logo_main_web_2.png">
+          <img class="img-responsive" src="Lap5_Final_logoRGB-original_400_82.png">
         </div>
       </div>
     </div>
     <div>
       <div class="row">
         <div class="col-md-12 taxi">
-          <img class="img-responsive" src="rentacar.svg">
+          <!-- <img class="img-responsive" src="rentacar.svg"> -->
         </div>
       </div>
     </div>
@@ -406,10 +421,248 @@
 
       <!--  Temporary Css -->
       <style type="text/css">
-        #ct_s1_search_button {
-            background-color: rgba(11, 98, 81, 0) !important;
-            border-color: #FFFFFF;
-        }
+        @import url('https://fonts.googleapis.com/css?family=Lato');
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      /*.ct-btn-p {
+          background: #FFFFFF;
+          border-color: #FFFFFF;
+      }*/
+      .ct-btn.ct-small {
+          font-size: 16px;
+          line-height: 36px;
+      }
+      .ct-btn-s {
+          background: rgba(255, 255, 255, 0);
+          color: #1A237E;
+          font-family: 'Lato', sans-serif;
+          box-shadow: 3px 3px rgba(59, 58, 56, 0);
+          border-color: #ffffff;
+      }
+      .ct-btn span {
+        color: #ffffff;
+      }
+      .ct-btn-s span:after {
+          font-family: 'Lato', sans-serif;
+          font-weight: 300;
+          content: "\e6a3";
+          font-size: 14px;
+          line-height: 1.2;
+          height: inherit;
+      }
+      .ct-ui-base h4 {
+          color: #000080;
+      }
+      #ct_s1_frm_search .ct-form-field .ct-input {
+          height: 45px;
+          border-radius: 5px;
+          border: 1px solid #000080;
+          background: rgba(255, 255, 255, 0);
+          color: #000080;
+      }
+      #ct_s1_search_button {
+        background-color: #000080;
+        border-color: #FFFFFF;
+      }
+      #ct_s1_pickup_date_cal {
+        color: #000080 !important;
+      }
+      #ct_s1_dropoff_date_cal {
+        color: #000080 !important;
+      }
+      }
+      .ct-form-field .ct-checkbox.ct-small span {
+          color: #000080;
+      }
+      .ct-form-field .ct-checkbox {
+          color: #000080;
+      }
+      /*.ct-palette-s-color {
+          color: #FFFFFF !important;
+      }*/
+      #ct_step1 button {
+          width: 100%;
+          height: 50px;
+          border-radius: 5px;
+      }
+      .ct-form-field i[class^="ct-icon-"], .ct-form-field i[class*=" ct-icon-"] {
+        line-height: 1.3;
+      }
+      .ui-datepicker {
+        width: 100%;
+        overflow: hidden;
+      }
+      .ui-datepicker.ui-datepicker-multi-2 .ui-datepicker-group {
+          width: 100%;
+      }
+      .ct-select {
+        font-family: 'Lato', sans-serif;
+        height: 45px;
+        border: 1px solid #000080;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0);
+        webkit-box-shadow: 0px 0px 0em rgba(252, 250, 250, 0) inset;
+        -moz-box-shadow: 0px 0px 0em #f1f1f1 inset;
+        box-shadow: 0px 0px 0em rgba(241, 241, 241, 0) inset;
+      }
+      .ct-select select {
+        /*line-height: 2;*/
+        font-family: 'Lato', sans-serif;
+        padding-top: .8em;
+        color: #000080;
+      }
+      .ct-select:after {
+        background-image: none;
+        background-color: rgba(240, 248, 255, 0);
+        color: #000080;
+      }
+      .ct-palette-d-color-darken {
+        font-family: 'Lato', sans-serif;
+        color: #000080;
+      }
+      #ct-ui-breadcrumbs {
+        background-color: #6973e1;
+      }
+      #ct-ui-breadcrumbs .ct-ui-current {
+        background-color: #1a237e;
+      }
+      #ct_step2 aside#ct_s2_side_panel div#ct_booking_summary_form i#ct_toggle_booking_summary_form {
+        color: #000080;
+        font-family: 'Lato', sans-serif;
+      }
+      #ct_step2 aside#ct_s2_side_panel div#ct_booking_summary_form i#ct_toggle_booking_summary_form:hover {
+          color: #ffffff;
+      }
+      .ct-box {
+        box-shadow: 0px 0px #f5f5f5;
+      }
+      #ct_step2 section#ct_s2_body_panel #ct_cars div.ct-iscroll-next-parent {
+        padding: .35em 0;
+      }
+      .ct-font-medium, [class*='ct-banner-'] {
+        font-size: 20px;
+      }
+      #ct_step2 #ct_filters_mobile .ct_filter_header {
+        height: 50px;
+        padding-top: 15px;
+      }
+      #ct_step2 #ct_filters_mobile .ct_filter_list_group {
+        min-height: 45px;
+        padding: 10px 0 5px 0;
+      }
+      .ct-modal-scrollable {
+        top: 50px;
+      }
+      .ct-car-rate-btn {
+        background: #000080;
+        color: #1A237E;
+        font-family: 'Lato', sans-serif;
+        box-shadow: 3px 3px rgba(59, 58, 56, 0);
+        border-color: #ffffff;
+      }
+      #ct_step2 #ct_filters_mobile ul ul.ct_filters_checkbox_container li .ct_filter_label i.ct-icon-checkmark-square-empty, 
+      #ct_step2 #ct_filters_mobile ul ul.ct_filters_checkbox_container li .ct_filter_label i.ct-icon-checkmark-square {
+        color: #000080;
+      }
+      #ct_step2 #ct_filters_mobile ul ul.ct_filters_checkbox_container li .ct_filter_label label .ct_filter_value_name {
+        color: #000080;
+      }
+      .ct_filter_curreny_button .ct-select {
+        border: 1px solid #000080;
+        height: 40px;
+        border-radius: 0px;
+      }
+      .ct_filter_curreny_button .ct-select select{
+        color: #000080;
+      }
+      .ct_filter_curreny_button .ct-select:after {
+        color: #000080;
+      }
+      #ct_box_DriversDetails .ct-form-field .ct-input {
+          height: 45px;
+          border-radius: 5px;
+          border: 1px solid #000080;
+          background: rgb(11, 98, 81,0);
+          color: #000080;
+      }
+      #ct_box_DriversDetails .ct-form-field .ct-palette-d-color-darken {
+          color: #000080;
+      }
+      #ct_box_DriversDetails .ct-select {
+        border: 1px solid #000080;
+      }
+      #ct_s2_frm_search .ct-form-field .ct-input {
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid #000080;
+        background: rgba(255, 255, 255, 0);
+        color: #000080;
+      }
+      #ct_step3 section#ct_s3_body_panel #ct_box_ExcessCover #ct_s3_Insurance_check .ct-form-row {
+        background-color: #000080;
+      }
+      #ct_s3_Insurance_check .ct-form-row .ct-form-field i[class^="ct-icon-"] {
+        line-height: 2.4;
+      }
+      .ct-ui-frm-step2.ct-ui-booking-summary .ct-select {
+        border: 1px solid #000080;
+      }
+      .ct-ui-frm-step2.ct-ui-booking-summary .ct-select:after {
+        color: #000080;
+      }
+      .ct-ui-frm-step2.ct-ui-booking-summary .ct-select select{
+        color: #000080;
+      }
+      #ct_s3_frm_search .ct-form-field .ct-input {
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid #000080;
+        background: rgba(255, 255, 255, 0);
+        color: #000080;
+      }
+      .ct-ui-frm-step3.ct-ui-booking-summary .ct-select select{
+        color: #000080;
+      }
+      .ct-ui-frm-step3.ct-ui-booking-summary .ct-select {
+        border: 1px solid #000080;
+      }
+      #ct_booking_summary_form #ct_s3_search_button {
+        background: #000080;
+      }
+      #ct_newsletter_label {
+        color: #000080; 
+      }
+      select#ct_phone_area_code {
+        color: #000080;
+      }
+      .ct-iscroll-next {
+        color: #000080;
+      }
+      #ct_booking_summary_form #ct_s2_search_button {
+        background: #000080;
+      }
+      .ct-multi-step-nav-block .ct-multi-step-btn {
+        color: #ffffff !important;
+        font-size: 20px;
+      }
+      #ct_search_again {
+        background: #000080;
+      }
+      .ct-modal-scrollable h4 {
+        color: #000080;
+      }
+      #ct_s2_body_panel .ct-iscroll-next {
+        color: #000080;
+      }
+      #ct_toggle_booking_summary {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      #ui-datepicker-div {
+        left: 0px !important;
+      }
+
       </style>
       <noscript>YOUR BROWSER DOES NOT SUPPORT JAVASCRIPT</noscript>
     </div>
@@ -430,6 +683,7 @@
             $("#pls_wait").css({'display': 'block'})
           });
 
+         
           var CT = {
             ABE: {
               Settings: {
@@ -442,7 +696,7 @@
                   {
                     step1: function(e, obj, $) {
                       // console.log("I am in step 1");
-                      $("#pls_wait").css({'display': 'none'})
+                      $("#pls_wait").css({'display': 'none'});
                       switch (obj.process) {
                         case 'start':
                                // console.log("Start");
@@ -470,7 +724,8 @@
                       switch (obj.process) {
                         case 'start':
                             $('.taxi').css("display","none");
-                            $('#back_home').css({'display':'block'});
+                            $('#back_to_home').css({'display':'block'});
+                            $('body').css({'background-color':'#7fbb00'});
                             // Do something...
                             break;
                         case 'startavail':
@@ -497,6 +752,21 @@
                             break;
                       }  
                     }
+                  },
+                  {
+                    step3: function(e, obj, $) { 
+                      switch (obj.process) {
+                        case 'start':
+                            // Do something...
+                            break;
+                        case 'insurance':
+                            // Do something...
+                            break;
+                        case 'success':
+                            // Do something...
+                            break;
+                      }
+                    }
                   }
                 ],
                 proxyURL: 'otaproxy.php',
@@ -515,9 +785,9 @@
                 // language: language,
                 // residenceID: 'IE',
                 theme:  {
-                  primary: '#0971b6', // e.g #0000FF
-                  secondary: '#0971b6', // e.g #FF0000
-                  complimentary: '#0971b6' // e.g #000000 #0b6251
+                  primary: '#000080', // e.g #0000FF
+                  secondary: '#000080', // e.g #FF0000
+                  complimentary: '#ffffff' // e.g #000000 #0b6251
                 }
               }
             }
