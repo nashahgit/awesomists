@@ -212,9 +212,9 @@
           "SA" : {"country":"SA","currency":"SAR","language":"AR"},
           "SY" : {"country":"SY","currency":"SYP","language":"AR"},
           "TN" : {"country":"TN","currency":"TND","language":"AR"},
-          "AE" : {"country":"AE","currency":"AED","language":"AR"},
           "YE" : {"country":"YE","currency":"ZMW","language":"AR"},
-          "IN" : {"country":"IN","currency":"INR","language":"EN"}
+          "IN" : {"country":"IN","currency":"INR","language":"EN"},
+          "AE" : {"country":"AE","currency":"AED","language":"AR"}
         }
 
         var country_code;
@@ -239,6 +239,7 @@
 
                 $('#curr_select option[value=' + curr_code + ']').prop("selected",true);
                 $('#lang_select option[value=' + lang_code + ']').prop("selected",true);
+                return false;
               }
               else {
                 $('#curr_select option[value="USD"]').prop("selected",true);
