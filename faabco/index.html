@@ -14,6 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
         <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:200" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/rotating-card.css">
         <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
         <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -40,7 +41,7 @@
                       <li><a href="#product">PRODUCTS</a></li>
                       <li><a href="#contact">CONTACT</a></li>
                     </ul>
-                  </div><!--/.nav-collapse -->
+                  </div>
                 </div>
             </nav>
             <div id="home">
@@ -94,13 +95,354 @@
                     </div>
                 </div>
             </div>
-            <div id="product">
+            <div id="product" class="divider">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h1>Products</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="image/organic-coconut.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Organic coconut</h3>
+                                                <!-- <p class="profession">Web Developer</p>
+                                                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p> -->
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> More Info
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Description</h4>
+                                                <p class="text-center">Thenga kola Thenga kola Thenga kola Thenga kola Thenga kola...</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="" onclick="rotateCard(this)" data-original-title="Flip Card">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="image/semihusked-coconut.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Semi-Husked Coconut</h3>
+                                                <!-- <p class="profession">Web Developer</p>
+                                                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p> -->
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> More Info
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Description</h4>
+                                                <p class="text-center">Thenga kola Thenga kola Thenga kola Thenga kola Thenga kola...</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="" onclick="rotateCard(this)" data-original-title="Flip Card">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="image/virgin-coconut-oil.jpeg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Organic Virgin Coconut Oil</h3>
+                                                <!-- <p class="profession">Web Developer</p>
+                                                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p> -->
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> More Info
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Description</h4>
+                                                <p class="text-center">Thenga kola Thenga kola Thenga kola Thenga kola Thenga kola...</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="" onclick="rotateCard(this)" data-original-title="Flip Card">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="image/orgain-coconut-Oil.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Organic Coconut Oil</h3>
+                                                <!-- <p class="profession">Web Developer</p>
+                                                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p> -->
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> More Info
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Description</h4>
+                                                <p class="text-center">Thenga kola Thenga kola Thenga kola Thenga kola Thenga kola...</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="" onclick="rotateCard(this)" data-original-title="Flip Card">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="image/cocopeat.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Coco Pith</h3>
+                                                <!-- <p class="profession">Web Developer</p>
+                                                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p> -->
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> More Info
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Description</h4>
+                                                <p class="text-center">Thenga kola Thenga kola Thenga kola Thenga kola Thenga kola...</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="" onclick="rotateCard(this)" data-original-title="Flip Card">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="image/coirFibre.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Coir Fibers</h3>
+                                                <!-- <p class="profession">Web Developer</p>
+                                                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p> -->
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> More Info
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Description</h4>
+                                                <p class="text-center">Thenga kola Thenga kola Thenga kola Thenga kola Thenga kola...</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="" onclick="rotateCard(this)" data-original-title="Flip Card">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="image/Coconut-Shell-Charcoal.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Coconut Shell Charcoal</h3>
+                                                <!-- <p class="profession">Web Developer</p>
+                                                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p> -->
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> More Info
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Description</h4>
+                                                <p class="text-center">Thenga kola Thenga kola Thenga kola Thenga kola Thenga kola...</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="" onclick="rotateCard(this)" data-original-title="Flip Card">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="image/coconut-shell-powder.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Coconut Shell Powder</h3>
+                                                <!-- <p class="profession">Web Developer</p>
+                                                <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p> -->
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> More Info
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Description</h4>
+                                                <p class="text-center">Thenga kola Thenga kola Thenga kola Thenga kola Thenga kola...</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="" onclick="rotateCard(this)" data-original-title="Flip Card">
+                                                <i class="fa fa-reply"></i> Back
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="contact">
+            <div id="contact" class="divider">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h1>Products</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>
 
         </footer>
+        <script type="text/javascript">
+            function rotateCard(btn){
+                var $card = $(btn).closest('.card-container');
+                console.log($card);
+                if($card.hasClass('hover')){
+                    $card.removeClass('hover');
+                } else {
+                    $card.addClass('hover');
+                }
+            }
+        </script>
     </body>
 </html>
