@@ -175,10 +175,9 @@
 	width: 25%;
 	margin: 0 auto;
 }
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: #0080ff;
+#product {
+  border-top: 1px solid #0080ff;
+  margin-bottom: 50px;
 }
 #product h1 {
     font-size: 54px;
@@ -187,6 +186,59 @@
     font-family: 'Source Sans Pro', sans-serif;
     position: relative;
     margin-top: 80px;
+}
+#contact {
+    background-color: #0080ff;
+}
+#contact h1 {
+    font-size: 54px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    margin-top: 80px;
+}
+#contact_form {
+  margin: 30px;
+}
+#contact_form .form-control {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #0080ff;
+    border-radius: 2px;
+    color: #464545;
+}
+.btn-primary {
+    color: #0080ff;
+    background-color: #ffffff;
+    border-color: #0080ff;
+}
+.modal-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: none; 
+}
+#contact_address {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#map {
+  padding: 0px;
+}
+#footer {
+  background-color: #0080ff;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+#msgprocess, #msgSubmit, #msgFail {
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media (max-width:767px) { 
