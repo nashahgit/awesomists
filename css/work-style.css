@@ -1,7 +1,205 @@
-﻿
-
+﻿/*@import 'https://fonts.googleapis.com/css?family=Poppins';*/
+/*@import 'https://fonts.googleapis.com/css?family=Russo+One';*/
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+/*@import 'https://fonts.googleapis.com/css?family=Roboto:100';*/
+body {
+	color: white;
+	  background: radial-gradient(circle, #039aff, white);
+	  background: -o-radial-gradient(circle, #039aff, white);
+	  background: -moz-radial-gradient(circle, #039aff, white);
+	  background: -webkit-radial-gradient(circle, #039aff, white);
+}
+.navbar {
+    border-radius: 0;
+    border: 0px solid transparent;
+}
 #navbar-work {
 	z-index: 1;
     background-color: #FFFFFF;
     text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 0px 6px rgba(0,0,0,0.23);
+}
+.navbar>.container .navbar-brand {
+    margin-left: 0px;
+}
+.navbar-brand {
+    float: left;
+    /* width: 100%; */
+    /*height: 50px;*/
+    padding: 0px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-brand img {
+    height: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: relative;
+}
+.navbar>.container-fluid .navbar-brand {
+     margin-left: 0px; 
+}
+.container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.header-bar {
+    color: #039aff;
+	background-color: #FFFFFF;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 0px 6px rgba(0,0,0,0.23);
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+.web-card-container {
+      -webkit-perspective: 800px;
+   -moz-perspective: 800px;
+     -o-perspective: 800px;
+        perspective: 800px;
+        margin-bottom: 30px;
+}
+.web-card-front, .web-card-back {
+    -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+     -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 0px 6px rgba(0,0,0,0.23)
+}
+/* front pane, placed above back */
+.web-card-front {
+    z-index: 2;
+}
+.web-card{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 4px;
+    color: #444444;
+}
+.web-card-container, .web-card-front, .web-card-back {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.web-card .web-card-cover{
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+.web-card .web-card-cover img{
+    width: 100%;
+}
+.web-card .web-card-content{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px;
+}
+.web-card .web-card-content .main {
+    min-height: 0px;
+}
+.web-card-more-info-btn {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.web-card .web-card-content .main p span{
+    font-weight: 600;
+}
+
+.web-card .web-card-content .main .text-center {
+    text-align: center;
+}
+.web-card .web-card-back .web-card-content .main {
+    height: auto;
+    overflow-y: auto;
+}
+.web-card .web-card-back .web-card-content .main p{
+    text-align: center;
+    margin-top: 20px;
+}
+.web-card .name {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #039aff;
+    line-height: 28px;
+    margin: 0px 0 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.web-card h5{
+    margin: 5px 0;
+    font-weight: 400;
+    line-height: 20px;
+}
+.web-card .web-card-footer {
+    border-top: 1px solid #EEEEEE;
+    color: #999999;
+    /*margin: 30px 0 0;*/
+    /*padding: 10px 0 0;*/
+    text-align: left;
+}
+.web-card .web-card-footer .btn-simple{
+    margin-top: -6px;
+    color: #0080ff;
+}
+.btn-simple {
+    opacity: .8;
+    color: #666666;
+    background-color: transparent;
+}
+.mobile-card .mobile-card-cover img {
+    width: 100%;
+}
+.mobile-card .mobile-card-cover2 img {
+    width: 86%;
+}
+.mobile-background {
+    background: #FFFFFF; /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #2892d6, #82d530); 
+    background: linear-gradient(to left, #2892d6, #82d530);  */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 0px 6px rgba(0,0,0,0.23);
+}
+.lap5-logo {
+    text-align: center;
+    margin-top: 40px;
+}
+.lap5-logo img {
+    width: 60%;
+}
+.desc {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    color: #000080;
+}
+.tagline {
+    margin-top: 30px;
+}
+.tagline h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #109fff;
+    font-family: 'Raleway', sans-serif;
+    /*text-shadow: 0px 0px 10px black;*/
+}
+.app-badge {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.dont-show {
+    display: none;
+}
+.modal {
+    padding-right: 0px !important;
+}
+.modal-style {
+    color: gray;
+    top: 100px;
 }

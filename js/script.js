@@ -197,7 +197,6 @@ $(document).ready(function(){
 		$("#twitter-share-btn").fadeOut(4000);
 	});
 
-	//});
 	// var $visionHeight = $('.vision-bg').height();
 	// var $freelanHeight = $('.freelan-bg').height();
 	// if($visionHeight > $freelanHeight) {
@@ -206,6 +205,11 @@ $(document).ready(function(){
 	// else {
 	// 	$('.vision-bg').height($freelanHeight);
 	// }
+
+	// var $frontHeight = $('.front').height();
+	// // var $backHeight;
+
+	// $('.back').height($frontHeight);
 
 });
 

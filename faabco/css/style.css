@@ -141,13 +141,15 @@
 }
 .carousel-caption {
 	font-size: 28px;
+  color: #0080ff;
 	text-transform: uppercase;
-	top: calc(50vh - 50px);
+	top: calc(50vh - 120px);
 	-webkit-animation: fadein 1s;
 }
 .carousel-caption span {
-	background-color: #0080ff;
+	background-color: #ffffff;
 	padding: 15px;
+  line-height: 2.3;
 }
 #about {
 	/*margin-top: 100px;*/
@@ -240,7 +242,15 @@
   color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
+.manual-flip {
+  cursor: pointer;
+}
+.sub-cat {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
 @media (max-width:767px) { 
   .navbar-brand img {
     /*margin: 0 auto;*/

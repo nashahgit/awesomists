@@ -9,7 +9,7 @@
 
     $.ajax({
         type: "POST",
-        url: "http://localhost/faabco/php/faabcomail.php",
+        url: "http://faabco.in/php/faabcomail.php",
         data: "name=" + name +"&email=" + email + "&phone=" + phone + "&subject=" + subject +  "&desc=" + desc, 
         success : function(text){
             if (text == "success"){
