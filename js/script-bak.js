@@ -122,19 +122,7 @@ $(document).ready(function(){
 	  });
 	});
 
-	/** Scroll reveal animation **/
-	window.sr = ScrollReveal({duration: 300, opacity: 0, reset: false});
-	sr.reveal('.one', {origin: 'bottom',distance: '20px', delay:400});
-	sr.reveal('.two', {origin: 'bottom',distance: '20px', delay: 500});
-	sr.reveal('.three', {origin: 'bottom',distance: '20px', delay: 600});
-	sr.reveal('.four', {origin: 'bottom',distance: '20px', delay: 700});
-	sr.reveal('.five', {origin: 'bottom',distance: '20px', delay: 800});
-	sr.reveal('.six', {origin: 'bottom',distance: '20px', delay: 900});
-	sr.reveal('.vision-head', {origin: 'top', distance: '20px', delay:300})
-	sr.reveal('.vision-bg', {origin: 'bottom', distance: '50px', delay: 400});
-
 	
-
 	/****** Contact quote ********/
 	$('.quoteClose').click(function() {
 		$('.foot-quote').addClass('slide-down', 1000, 'easeOutBounce');
