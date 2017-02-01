@@ -203,3 +203,9 @@ body {
     color: gray;
     top: 100px;
 }
+.modal-body {
+    padding: 0px !important;
+}
+.modal-body .col-sm-12 {
+    padding: 0px;
+}
