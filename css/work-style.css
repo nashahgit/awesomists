@@ -19,6 +19,15 @@ body {
     text-transform: uppercase;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 0px 6px rgba(0,0,0,0.23);
 }
+.navbar-toggle {
+    margin-right: 0px;
+    background-color: rgb(14, 169, 216);
+    border-radius: 0px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    background-color: #ffffff;
+}
 .navbar>.container .navbar-brand {
     margin-left: 0px;
 }
@@ -35,6 +44,23 @@ body {
     bottom: 0px;
     left: 0px;
     position: relative;
+}
+.navbar ul li {
+    /*border: 2px solid #ffffff;*/
+    margin-right: 4px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    /*margin-bottom: 2px;*/
+}
+.navbar ul li.active {
+    background-color: #0ea9d8;
+}
+.navbar ul li.active a{
+    color: #ffffff;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: rgba(238, 238, 238, 0);
 }
 .navbar>.container-fluid .navbar-brand {
      margin-left: 0px; 
@@ -208,4 +234,29 @@ body {
 }
 .modal-body .col-sm-12 {
     padding: 0px;
+}
+footer.footer {
+    background-color: #075f9c;
+}
+.copyright {
+    text-align: center;
+    color: #ffffff;
+}
+
+.keep-margin-30 {
+    margin: 30px;
+}
+@media (max-width: 767px) {
+    .navbar-brand img {
+        height: 85%;
+        top: 5px;
+        left: -10px;
+        position: relative;
+    }
+    .header-bar {
+        font-size: 30px;
+    }
+    .mobile-card-cover2 {
+        display: none;
+    }
 }
