@@ -860,5 +860,14 @@
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/freelancontact.js"></script>
         <script type="text/javascript" src="js/quotecontact.js"></script>
+        <script type="text/javascript">
+        $(function(){ 
+             $(".navbar-nav li a").on("click",function () {
+                 // $(".navbar-collapse.in").collapse('hide');
+                 $(".navbar-offcanvas").removeClass("in");
+                 $(".navbar-toggle ").removeClass("is-open");
+             });
+         });
+        </script>
     </body>
 </html>
