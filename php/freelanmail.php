@@ -3,12 +3,17 @@ require 'PHPMailer-master/class.phpmailer.php';
 require 'PHPMailer-master/class.smtp.php';
 require 'PHPMailer-master/PHPMailerAutoload.php';
 
-$name = $_POST["name"];
-$email = $_POST["email"];
-$mobile = $_POST["mobile"];
-$website = $_POST["website"];
-$expertise = $_POST["expertise"];
-$desc = $_POST["desc"];
+if(!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["mobile"]) && !empty($_POST["website"]) && !empty($_POST["expertise"]) && !empty($_POST["desc"])){
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $mobile = $_POST["mobile"];
+        $website = $_POST["website"];
+        $expertise = $_POST["expertise"];
+        $desc = $_POST["desc"];
+}else {
+        echo "What are you actually trying to do? Tell me...";
+}
+
 
 $codescafeMail = new PHPMailer();
 $codescafeMail->IsSMTP();

@@ -3,6 +3,22 @@ require 'PHPMailer-master/class.phpmailer.php';
 require 'PHPMailer-master/class.smtp.php';
 require 'PHPMailer-master/PHPMailerAutoload.php';
 
+if(!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["mobile"]) && !empty($_POST["company"]) && !empty($_POST["desc"]) && !empty($_POST["cms"]) 
+&& !empty($_POST["ecomm"]) && !empty($_POST["graphics"]) && !empty($_POST["host"]) && !empty($_POST["domain"])){
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $mobile = $_POST["mobile"];
+        $company = $_POST["company"];
+        $desc = $_POST["desc"];
+        $cms = $_POST["cms"];
+        $graphics = $_POST["graphics"];
+        $host = $_POST["host"];
+        $domain = $_POST["domain"];
+        $ecomm = $_POST["ecomm"];
+}else {
+        echo "What are you actually trying to do? Tell me...";
+}
+
 $name = $_POST["name"];
 $email = $_POST["email"];
 $mobile = $_POST["mobile"];
