@@ -16,7 +16,7 @@ if(!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["mobile"])
         $domain = $_POST["domain"];
         $ecomm = $_POST["ecomm"];
 }else {
-        echo "What are you actually trying to do? Tell me...";
+        exit("What are you actually trying to do? Tell me...");
 }
 
 $name = $_POST["name"];

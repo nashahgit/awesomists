@@ -11,7 +11,7 @@ if(!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["mobile"])
         $expertise = $_POST["expertise"];
         $desc = $_POST["desc"];
 }else {
-        echo "What are you actually trying to do? Tell me...";
+        exit("What are you actually trying to do? Tell me...");
 }
 
 
