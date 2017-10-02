@@ -1,0 +1,85 @@
+   .brand-logo h1{
+                line-height: .8;
+                margin-bottom: 1px;
+                font-size: 24px ;
+            }
+            .brand-logo h4{
+                line-height: 1.5;
+                margin-left: 3px;
+                font-size: 14px;
+            }
+            .navbar-brand{
+                display: block;
+                background-color: #ffffff;
+                margin-right: 5px;
+                margin-top: 2px;
+            }
+            .navbar-brand:hover{
+                background-color: #ffffff !important;
+            }
+            .navbar-fixed-top {
+                top: 0px;
+            }
+            .push-down {
+                margin-top: 60px;
+                margin-bottom: 15px;
+            }
+            .navbar-default .navbar-nav > li > a {
+                font-size: 18px;
+                margin-right: 10px;
+                padding: 10px 0px;
+            }
+            .navbar-brand {
+                float: left;
+                height: 50px;
+                padding: 10px 2px;
+            }
+            .form-group {
+                 margin-bottom: 0px; 
+            }
+            .search-form {
+                padding-top: 5px;
+            }
+            .menu-small-link {
+                margin-left: 15px;
+            }
+            .menu-small-link a{
+                padding: 0 0px !important;
+                font-size: 14px !important;
+            }
+            .navbar-default .navbar-nav > li.menu-small-link > a:after {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            @media (max-width: 1120px) {
+                .brand-logo h1{
+                    font-size: 18px;
+                }
+                .navbar-default .navbar-nav > li > a {
+                    font-size: 16px;
+                    margin-right: 6px;
+                }
+            }
+            @media (max-width: 991px) {
+                .brand-logo h1{
+                    font-size: 16px;
+                }
+                .navbar-default .navbar-nav > li > a {
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+                .menu-small-link {
+                    margin-left: 5px;
+                }
+                .menu-small-link a{
+                    padding: 0 0px !important;
+                    font-size: 12px !important;
+                }
+            }
+            @media (max-width: 767px){
+                .brand-logo h1 {
+                    font-size: 25px;
+                }
+                .navbar-brand{
+                    height: 65px;
+                }
+            }
