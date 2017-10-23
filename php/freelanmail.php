@@ -26,7 +26,7 @@ $codescafeMail->SMTPSecure = 'tls';
 // $codescafeMail->Port = 587;
 // $codescafeMail->SMTPSecure = 'tls';
 $codescafeMail->Username = "educationsmart24@gmail.com";
-$codescafeMail->Password = "passports";
+$codescafeMail->Password = "********";
 $codescafeMail->IsHTML(true); // For HTML formatted mails
 $codescafeMail->SingleTo = true; 
 $codescafeMail->From = $email;
