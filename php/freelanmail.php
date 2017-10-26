@@ -26,7 +26,7 @@ $awesomistMail->SMTPSecure = 'tls';
 // $codescafeMail->Port = 587;
 // $codescafeMail->SMTPSecure = 'tls';
 $awesomistMail->Username = "educationsmart24@gmail.com";
-$awesomistMail->Password = "********";
+$awesomistMail->Password = "passports";
 $awesomistMail->IsHTML(true); // For HTML formatted mails
 $awesomistMail->SingleTo = true; 
 $awesomistMail->From = $email;
