@@ -15,29 +15,29 @@ if(!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["mobile"])
 }
 
 
-$codescafeMail = new PHPMailer();
-$codescafeMail->IsSMTP();
-$codescafeMail->Mailer = 'smtp';
-$codescafeMail->SMTPAuth = true;
-$codescafeMail->Host = 'smtp.gmail.com'; 
-$codescafeMail->Port = 587;
-$codescafeMail->SMTPSecure = 'tls';
+$awesomistMail = new PHPMailer();
+$awesomistMail->IsSMTP();
+$awesomistMail->Mailer = 'smtp';
+$awesomistMail->SMTPAuth = true;
+$awesomistMail->Host = 'smtp.gmail.com'; 
+$awesomistMail->Port = 587;
+$awesomistMail->SMTPSecure = 'tls';
 // or try these settings (worked on XAMPP and WAMP):
 // $codescafeMail->Port = 587;
 // $codescafeMail->SMTPSecure = 'tls';
-$codescafeMail->Username = "educationsmart24@gmail.com";
-$codescafeMail->Password = "passports";
-$codescafeMail->IsHTML(true); // For HTML formatted mails
-$codescafeMail->SingleTo = true; 
-$codescafeMail->From = $email;
-$codescafeMail->FromName = $name;
-$codescafeMail->Subject = 'Awesomists Freelancer';
-$codescafeMail->Body = nl2br("NAME : ". $name . "\n" . "MOBILE : " . $mobile . "\n" . "EMAIL : " . $email . "\n" . "WEBSITE : " . $website . "\n" 
+$awesomistMail->Username = "educationsmart24@gmail.com";
+$awesomistMail->Password = "passports";
+$awesomistMail->IsHTML(true); // For HTML formatted mails
+$awesomistMail->SingleTo = true; 
+$awesomistMail->From = $email;
+$awesomistMail->FromName = $name;
+$awesomistMail->Subject = 'Awesomists Freelancer';
+$awesomistMail->Body = nl2br("NAME : ". $name . "\n" . "MOBILE : " . $mobile . "\n" . "EMAIL : " . $email . "\n" . "WEBSITE : " . $website . "\n" 
 	. "EXPERTISE : " . $expertise . "\n" . "DESCRIPTION :" . $desc . "\n");
-$codescafeMail->AddAddress("nashah25@gmail.com", "Nasruddin shah");
+$awesomistMail->AddAddress("nashah25@gmail.com", "Nasruddin shah");
 
- if(!$codescafeMail->Send()){
-        echo "Something Wrong! Message was not send!! " . $codescafeMail->ErrorInfo;
+ if(!$awesomistMail->Send()){
+        echo "Something Wrong! Message was not send!! " . $awesomistMail->ErrorInfo;
 }
 else{
         echo "success";
