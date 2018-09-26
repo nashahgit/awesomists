@@ -378,17 +378,26 @@
             sr.reveal('.slide-in-feature3',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1200, delay:1200});
             sr.reveal('.slide-in-feature4',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1200, delay:1400});
 
-            sr.reveal('.slide-in-blog-bg',{origin: 'left', easing: 'ease-out', distance: '50%', duration: 1000, delay:500});
-
-            sr.reveal('.slide-in-blog1',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:1000});
-            sr.reveal('.slide-in-blog2',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:1200});
-            sr.reveal('.slide-in-blog3',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:1400});
 
             sr.reveal('.slide-in-ad1',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:500});
             sr.reveal('.slide-in-ad2',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:700});
             sr.reveal('.slide-in-ad3',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:900});
             sr.reveal('.slide-in-ad4',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:1100});
 
+            var x = window.matchMedia("(max-width: 700px)");
+            myFunction(x); // Call listener function at run time
+            x.addListener(myFunction); // Attach listener function on state changes
+
+            function myFunction(x) {
+                if (x.matches) { // If media query matches
+                    alert("Small");
+                } else {
+                    sr.reveal('.slide-in-blog-bg',{origin: 'left', easing: 'ease-out', distance: '50%', duration: 1000, delay:500});
+                    sr.reveal('.slide-in-blog1',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:1000});
+                    sr.reveal('.slide-in-blog2',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:1200});
+                    sr.reveal('.slide-in-blog3',{origin: 'bottom', easing: 'ease-out', distance: '100%', duration: 1000, delay:1400});
+                }
+            }
         </script>
     </body>
 </html>
